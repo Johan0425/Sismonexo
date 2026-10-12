@@ -1,0 +1,173 @@
+/* Sistema visual de SismoNexo Colombia.
+   Superficies sólidas, un solo acento (azul petróleo) y el color reservado para los datos. */
+
+:root {
+  color-scheme: light;
+
+  /* Superficies */
+  --bg: #f4f5f3;
+  --surface: #ffffff;
+  --surface-2: #eceeed;
+  --surface-3: #e2e5e4;
+  --glass: rgba(255, 255, 255, 0.74);
+  --glass-border: rgba(22, 32, 40, 0.1);
+  --scrim: rgba(18, 24, 28, 0.36);
+
+  /* Texto */
+  --text: #1b1f23;
+  --text-2: #55606a;
+  --text-3: #6b7680;
+  --text-on-accent: #ffffff;
+
+  /* Acento e interacción */
+  --accent: #0b5f6b;
+  --accent-hover: #094f59;
+  --accent-soft: rgba(11, 95, 107, 0.1);
+  --accent-text: #0b5f6b;
+  --focus: #0a6fd6;
+
+  /* Líneas */
+  --border: rgba(22, 32, 40, 0.13);
+  --border-strong: rgba(22, 32, 40, 0.3);
+  --grid: rgba(22, 32, 40, 0.09);
+
+  /* Estados (siempre acompañados de icono y texto) */
+  --info: #1f5fa8;
+  --caution: #8a5a00;
+  --caution-soft: rgba(176, 120, 0, 0.12);
+  --critical: #a8321f;
+  --critical-soft: rgba(168, 50, 31, 0.1);
+  --positive: #1d6b4a;
+
+  /* Mapa */
+  --map-water: #e3e9ec;
+  --map-land: #f7f7f4;
+  --map-land-co: #fdfdfb;
+  --map-line: rgba(40, 56, 66, 0.45);
+  --map-line-soft: rgba(40, 56, 66, 0.2);
+  --map-graticule: rgba(40, 56, 66, 0.1);
+
+  /* Series de gráficos (categóricas, seguras para daltonismo) */
+  --s1: #0b5f6b;
+  --s2: #b3611a;
+  --s3: #4b4fa6;
+  --s4: #6f7a12;
+  --s5: #9a3d73;
+  --s6: #4d5a63;
+  --s7: #1f7fb8;
+
+  --shadow-1: 0 1px 2px rgba(18, 24, 28, 0.06), 0 1px 1px rgba(18, 24, 28, 0.04);
+  --shadow-2: 0 8px 24px rgba(18, 24, 28, 0.1), 0 2px 6px rgba(18, 24, 28, 0.06);
+  --shadow-3: 0 24px 60px rgba(18, 24, 28, 0.2), 0 4px 12px rgba(18, 24, 28, 0.08);
+
+  /* Tipografía: fuente del sistema (SF Pro en dispositivos Apple, equivalentes en el resto) */
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI Variable Text', 'Segoe UI', Inter, Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-22: 1.375rem;
+  --fs-28: 1.75rem;
+  --fs-36: 2.25rem;
+
+  /* Espaciado (retícula de 4 px) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 14px;
+  --r-4: 20px;
+  --r-full: 999px;
+
+  /* Movimiento */
+  --t-fast: 160ms;
+  --t-base: 220ms;
+  --t-panel: 340ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Estructura */
+  --sidebar-w: 248px;
+  --sidebar-w-min: 68px;
+  --topbar-h: 56px;
+  --bottomnav-h: 60px;
+  --inspector-w: 380px;
+  --control-h: 44px;
+  --pad: var(--sp-6);
+}
+
+:root[data-theme='oscuro'] {
+  color-scheme: dark;
+  --bg: #0e1113;
+  --surface: #171b1e;
+  --surface-2: #20262a;
+  --surface-3: #2a3136;
+  --glass: rgba(26, 31, 35, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --scrim: rgba(0, 0, 0, 0.56);
+
+  --text: #f3f1ec;
+  --text-2: #adb5bb;
+  --text-3: #8f989f;
+  --text-on-accent: #06181b;
+
+  --accent: #63bcc2;
+  --accent-hover: #7ccdd2;
+  --accent-soft: rgba(99, 188, 194, 0.14);
+  --accent-text: #7ccdd2;
+  --focus: #6cb4ff;
+
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.3);
+  --grid: rgba(255, 255, 255, 0.08);
+
+  --info: #7fb5ee;
+  --caution: #e2b25a;
+  --caution-soft: rgba(226, 178, 90, 0.13);
+  --critical: #f0907c;
+  --critical-soft: rgba(240, 144, 124, 0.12);
+  --positive: #77c9a2;
+
+  --map-water: #0b0e10;
+  --map-land: #15191c;
+  --map-land-co: #1c2226;
+  --map-line: rgba(220, 230, 236, 0.42);
+  --map-line-soft: rgba(220, 230, 236, 0.16);
+  --map-graticule: rgba(220, 230, 236, 0.07);
+
+  --s1: #63bcc2;
+  --s2: #e0a15f;
+  --s3: #a3a6ee;
+  --s4: #c2cc66;
+  --s5: #e08fbd;
+  --s6: #a9b4bc;
+  --s7: #6cb4ff;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-3: 0 24px 60px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+:root[data-density='compacta'] {
+  --control-h: 44px;
+  --pad: var(--sp-4);
+  --sp-6: 18px;
+  --sp-8: 24px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --pad: var(--sp-4);
+  }
+}

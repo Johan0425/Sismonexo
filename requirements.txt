@@ -1,0 +1,14 @@
+# Pipeline de datos, modelado y API. Versiones verificadas con Python 3.14.
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==26.0.0
+scipy==1.18.1
+scikit-learn==1.9.1
+shap==0.53.0
+shapely==2.2.0
+h3==4.5.0
+fastapi==0.143.0
+uvicorn==0.54.0
+pydantic==2.14.0
+pydantic-settings==2.15.0
+python-multipart==0.0.32

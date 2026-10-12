@@ -1,0 +1,28 @@
+# Entornos y dependencias
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Compilados y resultados de pruebas
+web/dist/
+web/test-results/
+web/playwright-report/
+
+# Secretos locales
+.env
+
+# Datos crudos e intermedios: se regeneran con el pipeline (ver README).
+# Sí se versionan data/processed/audit.json y web/public/data (datos de demostración reales).
+data/raw/
+data/interim/
+data/processed/*.parquet
+data/processed/*.csv.gz
+data/processed/*.log
+data/processed/run_failures.json
+
+.DS_Store
+.vercel
+.env*
+!.env.example

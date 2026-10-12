@@ -1,0 +1,17 @@
+{
+  "name": "sismonexo-colombia",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SismoNexo Colombia — atlas de actividad sísmica y pronóstico probabilístico (prototipo académico).",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "install:web": "npm --prefix web ci",
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "preview": "npm --prefix web run preview",
+    "test": "npm --prefix web test",
+    "test:e2e": "npm --prefix web run test:e2e"
+  }
+}

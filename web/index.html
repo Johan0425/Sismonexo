@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="SismoNexo Colombia: atlas académico de actividad sísmica y pronóstico probabilístico por zona y periodo, con datos del Servicio Geológico Colombiano. No es una alerta oficial." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f5f3" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1113" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>SismoNexo Colombia</title>
+    <script>
+      // Evita el destello de tema: se aplica antes de pintar. La preferencia vive en la URL o en la del sistema.
+      (function () {
+        var m = /[?&]tema=(claro|oscuro)/.exec(location.hash);
+        var t = m ? m[1] : (matchMedia('(prefers-color-scheme: dark)').matches ? 'oscuro' : 'claro');
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

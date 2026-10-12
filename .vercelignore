@@ -1,0 +1,13 @@
+# Rutas ancladas a la raíz: «data» sin barra inicial excluiría también web/public/data (los datos de la app).
+/.venv
+/data
+/api
+/pipeline
+/db
+/docs
+/notebooks
+/web/node_modules
+/web/dist
+/web/test-results
+/web/playwright-report
+/web/e2e

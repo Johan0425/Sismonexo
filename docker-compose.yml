@@ -1,0 +1,54 @@
+# SismoNexo Colombia · despliegue reproducible.
+#   docker compose up --build          → web (http://localhost:8080) + API (http://localhost:8000/docs)
+#   docker compose --profile db up     → añade PostgreSQL/PostGIS (arquitectura objetivo)
+# Copie antes .env.example como .env.
+name: sismonexo
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      SISMONEXO_CORS_ORIGINS: ${SISMONEXO_CORS_ORIGINS:-http://localhost:8080}
+      SISMONEXO_RATE_LIMIT_PER_MINUTE: ${SISMONEXO_RATE_LIMIT_PER_MINUTE:-120}
+      SISMONEXO_MAX_UPLOAD_BYTES: ${SISMONEXO_MAX_UPLOAD_BYTES:-15728640}
+      SISMONEXO_LOG_LEVEL: ${SISMONEXO_LOG_LEVEL:-INFO}
+    volumes:
+      - ./data/processed:/srv/data/processed:ro
+      - ./web/public/data:/srv/web-data:ro
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  db:
+    image: postgis/postgis:17-3.5-alpine
+    profiles: ["db"]
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sismonexo}
+      POSTGRES_USER: ${POSTGRES_USER:-sismonexo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en el archivo .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/migrations:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  pgdata:

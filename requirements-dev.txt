@@ -1,0 +1,9 @@
+-r requirements.txt
+pytest==9.1.1
+httpx==0.28.1
+matplotlib==3.11.2
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.4.0
+# Opcional, solo para cargar los datos en PostgreSQL/PostGIS (pipeline/sismonexo/load_postgis.py):
+# psycopg[binary]>=3.2

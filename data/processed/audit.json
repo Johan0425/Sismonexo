@@ -1,0 +1,177 @@
+{
+ "dataset_version": "rsnc-2026.10.10-094f0852",
+ "generated_at": "2026-10-10T16:08:58+00:00",
+ "records_downloaded": 67140,
+ "records_final": 66987,
+ "records_dropped": 153,
+ "coverage_start": "1993-06-01T01:32:55Z",
+ "coverage_end": "2026-10-10T13:46:54Z",
+ "min_magnitude_query": 2.5,
+ "bbox": {
+  "lon_min": -83.0,
+  "lon_max": -66.0,
+  "lat_min": -5.0,
+  "lat_max": 14.0
+ },
+ "counts": {
+  "invalid_coordinates": 0,
+  "missing_magnitude": 0,
+  "duplicate_id": 35,
+  "duplicate_near": 118,
+  "missing_depth": 0,
+  "depth_out_of_range": 241,
+  "depth_fixed_zero": 4007,
+  "outlier_magnitude": 0,
+  "outside_departments": 7354,
+  "reviewed": 66956,
+  "missing_location_error": 147
+ },
+ "removed_variables": [
+  "Enlaces a archivos S-file, formas de onda y mapa individual (no son atributos del evento)"
+ ],
+ "audit": [
+  {
+   "order": 1,
+   "rule": "R01",
+   "title": "Fecha y hora en UTC (ISO 8601)",
+   "detail": "La fuente publica la hora en UTC. Se descartan registros con fecha ilegible.",
+   "rows_in": 67140,
+   "rows_affected": 0,
+   "rows_dropped": 0,
+   "rows_out": 67140,
+   "action": "descartar"
+  },
+  {
+   "order": 2,
+   "rule": "R02",
+   "title": "Conversión de campos numéricos",
+   "detail": "Latitud, longitud, profundidad, magnitud, fases, RMS, gap y errores pasan a número. Los vacíos se conservan como dato faltante (sin imputar).",
+   "rows_in": 67140,
+   "rows_affected": 67140,
+   "rows_dropped": 0,
+   "rows_out": 67140,
+   "action": "transformar"
+  },
+  {
+   "order": 3,
+   "rule": "R03",
+   "title": "Coordenadas válidas dentro de la ventana de estudio",
+   "detail": "WGS84. Ventana: lat -5.0 a 14.0, lon -83.0 a -66.0.",
+   "rows_in": 67140,
+   "rows_affected": 0,
+   "rows_dropped": 0,
+   "rows_out": 67140,
+   "action": "descartar"
+  },
+  {
+   "order": 4,
+   "rule": "R04",
+   "title": "Magnitud reportada",
+   "detail": "Sin magnitud no es posible evaluar umbrales; el registro se descarta y se contabiliza.",
+   "rows_in": 67140,
+   "rows_affected": 0,
+   "rows_dropped": 0,
+   "rows_out": 67140,
+   "action": "descartar"
+  },
+  {
+   "order": 5,
+   "rule": "R05",
+   "title": "Duplicados por identificador",
+   "detail": "Un mismo identificador de evento aparece más de una vez (por ejemplo, en el traslape de consultas).",
+   "rows_in": 67140,
+   "rows_affected": 35,
+   "rows_dropped": 35,
+   "rows_out": 67105,
+   "action": "descartar"
+  },
+  {
+   "order": 6,
+   "rule": "R06",
+   "title": "Duplicados aproximados",
+   "detail": "Registros a ≤ 2 s, ≤ 0,1° y ≤ 0,3 unidades de magnitud de un registro anterior. Se conserva el primero.",
+   "rows_in": 67105,
+   "rows_affected": 118,
+   "rows_dropped": 118,
+   "rows_out": 66987,
+   "action": "descartar"
+  },
+  {
+   "order": 7,
+   "rule": "R07",
+   "title": "Profundidad faltante, fuera de rango o fijada en 0 km",
+   "detail": "Las profundidades < 0 o > 700 km pasan a faltante. Profundidad exactamente 0 km suele indicar profundidad fijada por el analista; se marca, no se descarta.",
+   "rows_in": 66987,
+   "rows_affected": 4248,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "marcar"
+  },
+  {
+   "order": 8,
+   "rule": "R08",
+   "title": "Familia del tipo de magnitud",
+   "detail": "Se agrupan variantes (MLr_1, MLr_2, MLv, Mw…) en familias. La magnitud original no se convierte ni se homogeneiza: los tipos no son equivalentes entre sí.",
+   "rows_in": 66987,
+   "rows_affected": 66987,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "transformar"
+  },
+  {
+   "order": 9,
+   "rule": "R09",
+   "title": "Departamento y municipio por unión espacial (DANE, MGN 2025)",
+   "detail": "El epicentro se ubica en los polígonos oficiales. Los eventos en el mar o en países vecinos quedan sin departamento; se conservan porque aportan a las celdas de frontera.",
+   "rows_in": 66987,
+   "rows_affected": 59633,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "enriquecer"
+  },
+  {
+   "order": 10,
+   "rule": "R10",
+   "title": "Descripción de ubicación",
+   "detail": "Para el periodo SEISAN se arma como 'Municipio - Departamento' con los campos publicados por el SGC.",
+   "rows_in": 66987,
+   "rows_affected": 48820,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "transformar"
+  },
+  {
+   "order": 11,
+   "rule": "R11",
+   "title": "Error horizontal y código de calidad de localización",
+   "detail": "Error horizontal = √(error_lat² + error_lon²). El código A–D/N es una clasificación propia de este proyecto basada en gap, error horizontal y RMS; no es un código oficial del SGC.",
+   "rows_in": 66987,
+   "rows_affected": 66987,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "derivar"
+  },
+  {
+   "order": 12,
+   "rule": "R12",
+   "title": "Estado de revisión",
+   "detail": "'Revisado' (SEISAN) y 'manual' (SeisComP) se interpretan como solución revisada por un analista.",
+   "rows_in": 66987,
+   "rows_affected": 66956,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "derivar"
+  },
+  {
+   "order": 13,
+   "rule": "R13",
+   "title": "Magnitudes atípicas",
+   "detail": "Magnitud > 8,5 o inferior al umbral de consulta (2.5). Se marcan para revisión.",
+   "rows_in": 66987,
+   "rows_affected": 0,
+   "rows_dropped": 0,
+   "rows_out": 66987,
+   "action": "marcar"
+  }
+ ]
+}
