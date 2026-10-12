@@ -1,0 +1,494 @@
+Median depth (km)
+Median depth of the events in each step. Sudden changes usually reflect local sequences or changes in the station network, not necessarily a regional physical change.
+Monthly median depth
+Minimum depth (km)
+Depth: share by class
+Missing depths
+Programme:
+Averages the rate with neighbouring zones.
+Forecasting is not predicting
+Forecast
+Forecast updated: {0} zones, average probability {1}%, model Statistical + ML hybrid.
+Forecast updated: {0} zones, average probability {1}%, model Historical-frequency baseline (recalculated).
+Forecast updated: {0} zones, average probability {1}%, model Historical-frequency baseline.
+Forecast updated: {0} zones, average probability {1}%, model Poisson / negative binomial.
+Forecast updated: {0} zones, average probability < {1}%, model Poisson / negative binomial.
+Forecast generated
+Forecast by zone (CSV)
+Forecast by zone (GeoJSON)
+Probabilistic forecast
+Probabilistic forecast · SismoNexo Colombia
+Current forecast for the main configuration. Experimental estimate.
+Current forecast by zone with its uncertainty
+share
+Working prototype of the degree project proposal. Its purpose is to show, with public data and reproducible methods, how far a probabilistic forecast of seismic activity by zone and period can go, and where its limits lie.
+It comes from the frequency observed in validation for zone-periods with similar probabilities.
+Next {0} days
+Next {0} days · M ≥ {1} · ≈ {2} km grid
+Project
+test
+Test
+Test (most recent)
+Test of components, palette and states
+Pettitt test (one change point in the median) on monthly series.
+Test of all base components. It is used to validate hierarchy, contrast and states in light and dark mode before building the views.
+final test
+final test ({0} most recent blocks)
+Final test (most recent)
+It can be fractional (for example, {0} events in {1} days). With a rate λ, the probability of at least one event in a Poisson process is {2} − e^(−λ).
+I can filter events by magnitude, date, depth and department; compare depths between departments; list where there was most recent activity; explain an estimate; create a report; define terms and say which model is best calibrated. Try one of the examples.
+=
+Pulses
+Score from {0} to {1} per criterion ({2} = the best among the models compared). Weights: PR-AUC {3}%, log-loss {4}%, calibration {5}%, interpretability {6}%, stability {7}%, cost {8}%.
+Point on the surface directly above the hypocentre.
+Points
+percentage points.
+=
+=
+What it is
+What it does
+What influenced it
+How complete and reliable the catalogue the platform works with is, and what was done to each record before using it.
+How prone to damage the exposed elements are (for example, by type of construction).
+Remove {0}
+Remove comparison
+Remove filter: {0}-{1}-{2} → {3}-{4}-{5}
+Remove filter: M ≥ {0}
+Remove filter: Santander
+R{0} · Department and municipality by spatial join (DANE, MGN {1})
+R{0} · Location description
+R{0} · Approximate duplicates
+R{0} · Duplicates by identifier
+R{0} · Review status
+R{0} · Date and time in UTC (ISO {1}) · R{2} · Numeric field conversion · R{3} · Valid coordinates within the study window · R{4} · Reported magnitude · R{5} · Duplicates by identifier · R{6} · Approximate duplicates · R{7} · Depth missing, out of range or fixed at {8} km · R{9} · Magnitude type family · R{10} · Department and municipality by spatial join (DANE, MGN {11}) · R{12} · Location description · R{13} · Horizontal error and location quality code · R{14} · Review status · R{15} · Outlier magnitudes
+R{0} · Depth missing, out of range or fixed at {1} km
+=
+Random Forest is not evaluated in the browser because of its size.
+Random Forest is trained only in the main configuration ({0} days, M ≥ {1}).
+Random Forest: Machine learning.
+Range in which the real value can reasonably lie, given how limited the data are.
+=
+=
+Actual
+Actual ({0})
+Actual versus hypothetical
+=
+Recall by the median depth of the events in the zone-period.
+Rejected or corrected
+Network of {0} events of magnitude {1} or greater with {2} proximity links. {3} sequences of two or more events; the largest gathers {4}.
+Reduced
+Reference
+Region
+records activity in a
+Duplicate record
+Original record (SGC)
+recorded an event of magnitude {0} or greater.
+Records
+Records within {0} s, {1}° and {2} magnitude units of an earlier record. The first is kept.
+Records downloaded: {0}; final: {1}; discarded: {2} (duplicates).
+Records discarded
+final records. The same log is in
+Historical records
+Historical records in the zone
+Total records
+Visible records (CSV)
+Visible records (GeoJSON)
+records; queried on
+Rule
+Quality rules applied to the catalogue
+documented quality rules: duplicates are removed, conventional depths are flagged and nothing is silently imputed.
+Validation rules that found problems
+rules in order and records how many rows each one affects. Only duplicates are discarded (
+Rules and audit
+Poisson regression on the event count; the probability uses a negative binomial (NB{0}) whose overdispersion is estimated by moments.
+Logistic regression
+Logistic regression with class weighting on the {0} standardised variables. Isotonic calibration.
+Logistic regression: Statistical / linear ML.
+Redo
+Retry
+Relationship
+Empirical relationship: for each unit of magnitude, earthquakes are about ten times less frequent.
+Relief
+Performance by department (Brier score)
+Performance by magnitude
+Performance by depth
+Repeat the initial tour
+Aftershock
+Close aftershocks split between sets
+Event representation
+Play
+Play the construction
+Play or pause
+Requires a connection
+Resolution
+Geographic resolution
+compared with that of
+Response to recent frequency
+Reset filters
+Reset values
+Result
+Validation result
+Result:
+Results
+Summary
+Summary of the filtered events
+Experiment summary
+Forecast summary
+Executive summary
+Summary and table
+Step back
+Step back or forward once
+Step back once
+Reviewed by an analyst
+Reviewed
+Reviewed by an analyst
+Check the address or use search to find a view.
+Check your connection; the data already loaded remain available.
+Seismic risk
+=
+=
+=
+=
+=
+Rotate and tilt
+Probable break
+Structural breaks (Pettitt test)
+Out
+=
+=
+Exit story mode
+Skip to content
+=
+=
+=
+=
+=
+=
+=
+Variants (MLr_{0}, MLr_{1}, MLv, Mw…) are grouped into families. The original magnitude is not converted or homogenised: the types are not equivalent to one another.
+is assigned as follows: “calibrated” if the expected calibration error (ECE) is {0} or less and the slope is between {1} and {2}; “partial calibration” if the ECE is {3} or less; “not calibrated” otherwise; “not evaluated” if there are fewer than {4} positives.
+It is compared against the baseline, with data it has not seen and respecting time. With rare events, getting “nothing happens” right is easy: that is why PR-AUC, Brier and calibration are used, not accuracy.
+Seven families are compared, from the simplest to the most flexible. No sequential model (recurrent networks) was trained: the number of zone-periods with an event does not justify it.
+Records without a date or magnitude are discarded · Duplicates by identifier · The homogenised Mw magnitude published by the CSI is kept
+Drawn beneath the events.
+The probability was estimated in {0} zones. The average probability is {1}%; {2} zones have {3}% or more.
+Kept only during this session.
+It is shown as an optional atlas layer directly from the SGC map service; it is neither downloaded nor modified.
+Showing the
+at least one event above the threshold was recorded (
+It is summarised by the b-value, close to {0} in many regions. It explains why large events are rare and hard to model.
+It is checked with the reliability curve. Isotonic calibration fitted on the validation block only is used here.
+The instrumental catalogue of Colombia's National Seismological Network is used, downloaded from the SGC's official query forms:
+The recalculated baseline is used because you chose:
+Used only as historical context. It does not feed the forecast models.
+Historical explorer section
+Quality sections
+Selected sequence
+Sequences
+Sequences grouped by the place of their largest-magnitude event.
+Sequences by region
+Secondary
+Secondary · {0}. Instrumental catalogue of Colombia's National Seismological Network.
+Following the system
+Six classes. Each has a colour, pattern, label and range.
+Six automatic checks on the actual table and splits of this experiment.
+=
+=
+=
+Selected
+Select another model in the metrics table to see its curve.
+Select a sequence
+week
+Week
+Model sensitivity
+Flagged an event
+Sep
+Gap between sets
+September
+Series
+Time series of {0} events grouped by year. The maximum was {1} events in the interval starting on {2}.
+Time series of {0} events grouped by week. The maximum was {1} events in the interval starting on {2}.
+Colombian Geological Survey
+Colombian Geological Survey · official product, not generated by this platform
+Colombian Geological Survey (SGC)
+Colombian Geological Survey (SGC) — National Seismological Network of Colombia
+Colombian Geological Survey (SGC) — National Seismological Network of Colombia, seismicity catalogue
+Local session with no account: nothing you do here is sent to a server.
+=
+SHAP in log-odds of the gradient boosting model before isotonic calibration.
+If we shuffled the data at random, the model would see aftershocks of the same sequence in training and in test, and would look better than it is. Here the model is always trained on the past and tested on the future, in blocks that advance year by year.
+Always with an uncertainty interval.
+Seven model families evaluated with the same chronological validation. No model is chosen by accuracy: with rare events, getting “nothing happens” right almost every time does not show usefulness.
+It means that in the catalogue that zone has recorded few events above the threshold. It does not guarantee absence of activity: the catalogue covers only a few decades and large earthquakes have much longer recurrence periods.
+Next
+=
+Geometric simplification on the server: {0}° (departments) and {1}° (municipalities) · Repair of invalid geometries
+No matches
+No data
+No location error
+not evaluated
+No events to summarise with the current filters.
+No findings
+no information
+no information: {0}
+Without a magnitude it is not possible to evaluate thresholds; the record is discarded and counted.
+No reported metrics
+No trained model because of:
+No results for “
+No risk.
+=
+Shallow, intermediate and deep seismicity.
+An earthquake that follows a larger one in the same region, within a sequence.
+=
+=
+SismoNexo Colombia · Atlas of seismic activity and probabilistic forecasting
+SismoNexo Colombia is an academic prototype that organises the public seismic catalogue of the Colombian Geological Survey and estimates, by zone and period, the probability of recording activity above a magnitude threshold. It does not predict individual earthquakes or issue alerts.
+SismoNexo Colombia, go to home
+Earthquakes of magnitude {0} or greater, {1}–{2}
+System
+Design system
+Design system · SismoNexo Colombia
+Official seismic hazard site
+Counts events only
+Only the last year
+Only quality A and B locations
+Only the last {0} years
+They are
+They are five different concepts:
+I am Nexo. I turn questions into filters and calculations on the real catalogue. I am not a generative model: if I do not have the information, I will tell you.
+Smoothing and approximate intervals
+Drop it here. You will see which rows are accepted, which are rejected and why, before using it.
+=
+sum over all zones
+Primary surface
+Secondary surface
+Tertiary surface
+Quality rules table and audit log
+Scrollable table
+Main table
+Main table (CSV)
+Main table: activity by year
+Main table: largest-magnitude events
+Main table: metrics
+Main table: quality rules and audit
+Main table: zones with the highest probability
+Size = magnitude · Stronger line = events closer in time
+Zone size (log₁₀ km²)
+Size: magnitude
+Cards and indicators
+False positive rate
+True positive rate
+True positive rate versus false positive rate. The diagonal corresponds to a model with no information. With very imbalanced classes, this curve tends to look better than the model is in practice.
+Expected rate
+Expected event rate
+Expected event rate in {0} days (λ)
+Historical rate
+Historical rate of the zone with a Gamma prior that pulls it towards the average of all zones when data are scarce. P = {0} − e^(−rate).
+Observed historical rate
+Observed historical rate (M ≥ {0})
+Historical rate above the threshold
+ETAS-inspired rate
+ETAS-inspired rate: Statistical (seismological).
+Monthly rate by magnitude interval. Period A recorded {0} events per month and period B {1}.
+Rate used: {0} events per {1} days.
+=
+Keys
+Theme
+Theme, density, motion and time zone
+Trend ({0} years)
+Weighted recent-activity term (ETAS-like)
+Academic terms of use
+terms.
+Explanatory text
+Primary text
+Primary text on background
+Primary text on surface
+Secondary text
+Secondary text on surface
+Secondary text on secondary surface
+Text on accent
+Tertiary text on surface
+Time since the last event
+Time since the last event ↑
+Time since the last event ↓
+Time since the last event above the threshold
+Time and distance
+Type
+File type not supported (.exe). Use CSV, JSON or GeoJSON.
+Report type
+Magnitude type
+ETAS-like
+Typography
+Typography: each device's system font. Icons: Lucide. The logo and the interface design are original to this project.
+Magnitude types
+Magnitude types over time
+Title
+Page title · {0}
+Section title · {0}
+Card title · {0}
+The whole study window
+All
+All depths
+All input variables have data for this zone.
+The whole catalogue
+The whole catalogue (actual)
+All of this describes the model's behaviour. These are statistical associations: they do not demonstrate causality or indicate that a variable causes earthquakes.
+Every more complex model must be compared against it. If it does not clearly beat it, the added complexity is not justified.
+Everything lives in this tab's memory. To keep a view, copy its link.
+All (M ≥ {0})
+All walk-forward blocks
+All recorded events (M ≥ {0}). Also adjusts the {1}-day and {2}-year counts. Actual value: {3} (unusually high or low compared with the other zones). Usual range: {4}–{5}.
+All models
+=
+=
+Total
+transform
+Seismic trace: visual signature (static)
+Three plates: Nazca, Caribbean and South America.
+Location
+Last update
+Last catalogue update: {0} · {1} real events from the Colombian Geological Survey
+Last event
+Last {0} year
+Last {0} years
+Last {0} years (since {1})
+Last {0} days
+Magnitude threshold
+A
+An imported file is only used for exploring (atlas and historical explorer) during this session and always appears labelled as such. The forecasts, the lab and the comparison remain based on the official catalogue version
+An atlas of the seismic activity recorded since {0} and a
+A catalogue is an ordered list of earthquakes. Each row says when it happened, where, at what depth, with what magnitude and with how much uncertainty it was located. We use the public catalogue of the National Seismological Network of the Colombian Geological Survey.
+A catalogue is never complete
+One circle per event
+The same event identifier appears more than once (for example, where queries overlap).
+A model is calibrated if, when it says {0}%, the event happens about {1}% of the time.
+A model is only justified if it improves on the historical-frequency baseline on data after its training, and if its probabilities are calibrated. When the improvement is small or unstable between blocks, the simpler model is preferred.
+A real record from the catalogue
+An isolated earthquake cannot be anticipated. What can be measured is how often a
+A single colour
+One page with the main figures and messages
+A high probability of activity does not mean high risk, and vice versa. This platform estimates probability of activity; it does not compute risk.
+A high probability indicates that earthquakes above the threshold are recorded often in that zone, as in the Bucaramanga nest, where activity is very deep and rarely causes damage. It says nothing about damage or an imminent event. Earthquake preparedness is advisable throughout the country, whatever the value on the map.
+A high probability does not mean that an earthquake will certainly occur. A low probability does not mean a total absence of activity either.
+A high probability does not mean that an earthquake will certainly occur. A low probability does not mean a total absence of activity either. The values express how often similar zone-periods recorded at least one event in the past; they do not indicate damage or an imminent event.
+A probability of {0}% means that, of every {1} similar zone-periods in the past, about {2} recorded an event. It does not say which ones or when.
+A probability of {0}% means that, of every {1} similar zone-periods, at least one event was observed in about {2}. It does not say in which. A high probability is not certainty and a low one is not absence of activity.
+A probability of twenty per cent means that, of every hundred similar zone-periods, about twenty recorded an event. It does not say which. That is why each value is shown with its uncertainty interval.
+Single ink
+=
+Unit
+Unit of analysis
+Unit of analysis: a zone (department, municipality or cell) observed during a period ({0}, {1} or {2} days).
+Unit: ≈ {0} km grid · Horizon: {1} days · Threshold: M ≥ {2}
+Unit: ≈ {0} km grid · Horizon: {1} days ({2} to {3}) · Threshold: M ≥ {4} · Model: Statistical + ML hybrid
+Unit: ≈ {0} km grid. Change it in “Forecast”.
+Units of analysis
+Units: Department ({0}), Municipality ({1}), H{2} cell ({3}), ≈ {4} km grid ({5}), ≈ {6} km grid ({7}). Each row is a zone at an origin date; variables use only the past and the label the following interval.
+Query URL
+Uses the active date, magnitude, depth and location filters. Change them in the atlas.
+Uses the same date, depth and location filters as the rest of the application.
+Use latitude between −{0} and {1} and longitude between −{2} and −{3}
+Use a value between {0} and {1}.
+Permitted use: teaching, research, outreach and academic assessment, citing the project and the data source (SGC).
+You:
+=
+It ranges from {0} (perfect) to {1}. It rewards both discrimination and calibration. With rare events all models have low values, so it is worth looking at the relative improvement over the baseline (Brier skill score).
+It is {0} for a model with no information and {1} for a perfect one. With very imbalanced classes it can look high even if the model has little practical use.
+Validation
+Validation (calibration and threshold)
+Validation of “malo.csv”
+Validation of “muestra.csv”
+Validation of “x.exe”
+Validation of “x.json”
+Validation that respects time
+Walk-forward validation
+Walk-forward validation of the statistical + ML hybrid: PR-AUC {0} (baseline {1}; no information {2}), Brier {3} (+{4}% over the baseline). Calibration status: calibrated.
+Value
+Model base value in log-odds:
+conventional value from the source
+Magnitude outliers
+Actual values
+Variable
+Map variable
+Target variable included as an input
+Variables built with future data
+Model input variables
+Scenario variables
+Variables removed
+Most influential variables
+Variables changed: recent events ({0} days) ({1} → {2}); recent events ({3} days) ({4} → {5}); events in the last year ({6} → {7}); historical rate above the threshold ({8} → {9}); equivalent accumulated magnitude ({10} year) ({11} → {12}); mean depth ({13} year) ({14} → {15}); median depth ({16} year) ({17} → {18}); time since the last event ({19} → {20}).
+Variables changed: historical rate above the threshold ({0} → {1}); equivalent accumulated magnitude ({2} year) ({3} → {4}); mean depth ({5} year) ({6} → {7}); median depth ({8} year) ({9} → {10}); time since the last event ({11} → {12}); time since the last event above the threshold ({13} → {14}); distance to the most recent M ≥ {15} event ({16} → {17}); seasonality (sine of the day of the year) (-{18} → {19}).
+variables per zone-period, in
+Depth variation
+Change from the previous period
+Speed
+Historical window for the rate
+Overlapping windows
+View keyboard shortcuts
+See how the window advances
+View data as a table
+See the catalogue quality centre
+View the map
+See story mode
+See the design system
+See in the glossary
+View chart
+See the model comparison
+See full provenance and licences
+View network
+See rules, provenance and licences
+View results
+View table
+Data version
+Dataset version:
+Dataset version
+Model version
+Model version:
+version rsnc-{0}-{1}f{2}
+Versions and changelog
+=
+=
+Visible when zoomed in
+View
+Graph view
+Map view
+Geographic view
+Tilted view
+Tilted view ({0}D)
+Report preview
+Preview: first {0} accepted rows
+Views
+Saved views
+Saved views (
+Return to the national extent
+Vulnerability
+expanding-window walk-forward
+Expanding-window walk-forward in {0} blocks with a time gap equal to the horizon. Isotonic calibration fitted on validation only. The two most recent blocks are the final test. Automatic detector of six types of information leakage.
+WGS{0}, with provenance metadata
+WGS{0}. Window: lat -{1} to {2}, lon -{3} to -{4}.
+and with {0}% for its own historical baseline
+and
+and choose the expert query ({0}–{1} or {2} to date).
+and take no part in choosing the default model, which is the one with the lowest log-loss in the earlier blocks.
+and is calibrated on the period
+zone
+Zone
+Zone with the highest value in the current forecast (
+border zone
+border zone ({0}° N, {1}° W)
+border zone ({0}° N, {1}° W) · {2}%
+Geographic zone
+Time zone for displaying events
+Zone and model
+Zone-period
+Zones
+Zones with {0}% or more
+Zones with the highest probability
+zone-periods
+zone-periods ·
+Zone-periods evaluated
+positive zone-periods, the volume of data does not justify a model of that capacity and the risk of overfitting would be high. The “ETAS-inspired rate” uses fixed parameters taken from the literature; it is not a full maximum-likelihood ETAS fit.
+zone-periods and
+=
+=
+=

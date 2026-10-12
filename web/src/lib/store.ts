@@ -4,6 +4,7 @@ import { create } from 'zustand'
 import type { ModelKey, Unit } from './data'
 import { HORIZONS, THRESHOLDS, UNITS } from './data'
 import { isIsoDay, type TimeZoneMode } from './format'
+import type { Lang } from './i18n'
 
 export interface Filters {
   from: string
@@ -47,6 +48,8 @@ export interface Prefs {
   sidebar: 'full' | 'min'
   /** Atajos de una sola tecla (WCAG 2.1.4 exige poder desactivarlos). */
   keys: boolean
+  /** Idioma de la interfaz. El contenido se escribe en español y se traduce en tiempo de ejecución. */
+  lang: Lang
 }
 interface Snapshot {
   filters: Filters
@@ -70,7 +73,7 @@ export const DEFAULT_FILTERS: Filters = { from: COVERAGE.from, to: COVERAGE.to, 
 export const DEFAULT_FC: ForecastParams = { unit: 'g50', h: 30, thr: 4, model: 'auto', smooth: 0, histFrom: 1993 }
 export const DEFAULT_ATLAS: AtlasParams = { viz: 'puntos', colorBy: 'profundidad', overlays: ['dep'] }
 export const DEFAULT_VIEW: MapView = { lon: -73.2, lat: 4.4, zoom: 4.6, bearing: 0, pitch: 0 }
-const DEFAULT_PREFS: Prefs = { theme: 'sistema', density: 'comoda', motion: 'sistema', tz: 'colombia', sidebar: 'full', keys: true }
+const DEFAULT_PREFS: Prefs = { theme: 'sistema', density: 'comoda', motion: 'sistema', tz: 'colombia', sidebar: 'full', keys: true, lang: 'es' }
 
 interface State {
   filters: Filters
@@ -263,6 +266,7 @@ export function toQuery(s: Pick<State, 'filters' | 'fc' | 'atlas' | 'view' | 'se
   if (sel) q.set('sel', sel.kind === 'evento' ? `e.${sel.id}` : `z.${sel.unit}.${sel.id}`)
   if (prefs.theme !== 'sistema') q.set('tema', prefs.theme)
   if (prefs.tz !== 'colombia') q.set('hora', prefs.tz)
+  if (prefs.lang !== 'es') q.set('idioma', prefs.lang)
   return q.toString()
 }
 
@@ -317,7 +321,7 @@ export function fromQuery(q: URLSearchParams, cur: Pick<State, 'filters' | 'fc' 
     view,
     selection,
     zoneMetric: metrics.includes(q.get('metrica') as ZoneMetric) ? (q.get('metrica') as ZoneMetric) : cur.zoneMetric,
-    prefs: { ...cur.prefs, theme: theme === 'claro' || theme === 'oscuro' ? theme : cur.prefs.theme, tz: q.get('hora') === 'utc' ? ('utc' as const) : cur.prefs.tz },
+    prefs: { ...cur.prefs, theme: theme === 'claro' || theme === 'oscuro' ? theme : cur.prefs.theme, tz: q.get('hora') === 'utc' ? ('utc' as const) : cur.prefs.tz, lang: q.get('idioma') === 'en' || q.get('idioma') === 'pt' ? (q.get('idioma') as Lang) : cur.prefs.lang },
   }
 }
 

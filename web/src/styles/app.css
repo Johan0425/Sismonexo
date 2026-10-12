@@ -1852,3 +1852,35 @@ details.disclosure > div {
     flex: 0 1 auto;
   }
 }
+
+/* Selector de idioma: pequeño y discreto en la barra superior. */
+.lang-select {
+  appearance: none;
+  flex: none;
+  width: 44px;
+  height: 28px;
+  padding: 0 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  background: var(--surface);
+  color: var(--text-2);
+  font-size: var(--fs-12);
+  font-weight: 620;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+}
+.lang-select:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+@media (pointer: coarse), (max-width: 767px) {
+  .lang-select {
+    height: 44px;
+  }
+}
+.topbar .btn,
+.topbar .status-pill {
+  flex: none;
+}

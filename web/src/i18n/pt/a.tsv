@@ -1,0 +1,478 @@
+0	, com o qual os modelos foram treinados.
+1	, dentro da janela {0}° S–{1}° N e {2}°–{3}° O. Cada resposta original é conservada com sua impressão digital SHA-{4}.
+2	, o modelo com menor erro de calibração (ECE) na validação walk-forward é
+3	, estado «
+4	, frente a
+5	, magnitude de referência
+6	, janela de
+7	; camada oficial opcional.
+8	; magnitude máxima
+9	; usa-se
+10	: ECE
+11	: o intervalo abrange
+12	: treina até
+13	: para cada zona, quão provável é registrar pelo menos um sismo acima de certa magnitude nos próximos {0} dias, com sua incerteza. Não prevê sismos individuais.
+14	: probabilidade estimada de
+15	Como o projeto poderia evoluir?
+16	Como se constrói uma zona-período?
+17	Como se interpreta o mapa?
+18	Como a informação é preparada?
+19	Qual é a diferença entre ameaça e risco?
+20	Qual modelo está mais bem calibrado?
+21	Quais são as limitações?
+22	De onde vêm os dados?
+23	Esta plataforma pode me avisar antes de um terremoto?
+24	Por que os valores mudam entre modelos?
+25	Por que o modelo mostra este valor?
+26	Por que a validação deve respeitar o tempo?
+27	Por que a Colômbia treme?
+28	O que é o intervalo de incerteza?
+29	O que é uma probabilidade?
+30	Que informação contém um catálogo sísmico?
+31	Que modelo devo usar?
+32	Quais modelos foram comparados?
+33	O que significa o Brier score?
+34	Quais zonas tiveram maior atividade nos últimos {0} dias?
+35	Quem ganhou o jogo?
+36	Vai tremer amanhã?
+37	E se a probabilidade for baixa?
+38	. Mesmo que a taxa cresça, a probabilidade se aproxima de {0} % sem alcançá-lo.
+39	. Em «Atlas sísmico → Exportar» é possível baixar em CSV ou GeoJSON os eventos filtrados e visíveis, com sua procedência.
+40	. Duração do catálogo usado:
+41	. O atlas já os mostra.
+42	. O horizonte principal é de {0} dias; também há {1} e {2} dias. Os limiares treinados são magnitude {3}, {4} e {5}.
+43	. No histórico analisado, valores assim se relacionaram com mais zonas-período com evento.
+44	. Estado de calibração:
+45	. Estar bem calibrado não basta: também importa quanto melhora em relação à linha de base.
+46	. Estimativa experimental, não oficial.
+47	. Fonte: SGC–RSNC, versão
+48	. Fonte: SGC–RSNC.
+49	. Gestão de risco:
+50	. As «sequências» são componentes conexos da rede de proximidade; não equivalem a uma classificação sismológica de precursores e réplicas.
+51	. As origens são espaçadas a cada {0} dias (horizonte de {1}) ou a cada {2} dias (horizontes de {3} e {4}). As variáveis usam apenas eventos anteriores à origem; o rótulo usa os eventos do intervalo [origem, origem + horizonte).
+52	. Magnitude mínima consultada:
+53	. Não deve ser usado para tomar decisões de proteção civil.
+54	. Não fala de danos: o risco depende também de quem e do que está exposto e de como está construído.
+55	. Não alterei seus filtros.
+56	. Não se usa nenhuma divisão aleatória.
+57	. Previsão gerada em
+58	. Reduza o intervalo de datas para um passo mais fino.
+59	. São associações observadas no histórico; isso não demonstra causalidade.
+60	. Sua única informação é a frequência histórica da zona (
+61	. Aumente a magnitude mínima ou encurte o período.
+62	. Versão do modelo principal:
+63	· distância
+64	· gerado em
+65	· interpretabilidade
+66	· M máx. {0}
+67	· Modo história
+68	· não se aplica
+69	· padrão
+70	· versão
+71	· voltar ao catálogo oficial
+72	'Revisado' (SEISAN) e 'manual' (SeisComP) são interpretados como solução revisada por um analista.
+73	«—»: menos de {0} casos; não se calcula.
+74	«Por que o modelo mostra este valor?» combina cinco elementos: valores SHAP do gradient boosting para a zona, importância por permutação (queda de PR-AUC no último bloco de teste), dependências parciais das variáveis principais, comparação com a linha de base e os períodos históricos da mesma zona mais parecidos com o atual.
+75	«Cenário {0}» salvo na memória durante esta sessão.
+76	». Tente o nome de um departamento, um município ou um par de coordenadas (latitude, longitude).
+77	». Tente outra palavra.
+78	(antes:
+79	(camada opcional) — © Colaboradores do OpenStreetMap, licença ODbL.
+80	(camada opcional) — Mapzen Terrain Tiles no AWS Open Data.
+81	(em {0} arquivos originais conservados com sua impressão digital SHA-{1})
+82	(no catálogo instrumental completo)
+83	(equivale a
+84	(intervalo de {0} %:
+85	(linha de base
+86	(referência sem informação:
+87	(abre em uma nova aba)
+88	(ver README). Nomes de coluna aceitos: event_datetime_utc ou fecha + hora_utc; latitude ou latitud; longitude ou longitud; magnitude ou magnitud; depth_km ou profundidad.
+89	), com variação entre blocos de
+90	), frente a uma média de
+91	). O modelo escolhido foi
+93	{0} — primeira versão do protótipo
+95	{0} a {1}
+96	{0} anos
+97	{0} automáticos
+98	{0} blocos walk-forward
+99	{0} blocos walk-forward com separação de {1} dias.
+100	{0} blocos walk-forward de janela crescente, com separação de {1} dias entre treino, validação e teste. {2} zonas-período; {3} com evento (prevalência {4} %). Modelo padrão: Híbrido estatístico + ML (menor log-loss nas partições walk-forward anteriores ao bloco de teste final.)
+101	{0} configurações de modelos treinadas ({1} unidades geográficas × {2} horizontes × {3} limiares) com validação walk-forward e detector de vazamentos.
+102	{0} de {1} eventos · até {2}
+103	{0} de {1} eventos dos primeiros {2} dias dos blocos de teste ({3}%) têm um evento a ≤ {4} km nos {5} dias anteriores à fronteira. A partição é cronológica (nunca aleatória), de modo que uma sequência jamais fica misturada ao acaso; ainda assim, a atividade persistente cruza a fronteira e explica parte do acerto de todos os modelos, inclusive a linha de base.
+104	{0} dias
+105	{0} dias (principal)
+106	{0} evento sem vizinhos próximos; o selecionado está destacado.
+107	{0} eventos · {1} MB em formato colunar
+108	{0} eventos / {1} dias
+109	{0} eventos atendem aos filtros.
+110	{0} eventos de magnitude {1} ou superior desde {2}.
+111	{0} eventos de magnitude Mw {1} ou superior no Catálogo Sísmico Integrado do SGC. Antes do século XX só se conhecem os grandes sismos documentados em fontes históricas; a maior densidade recente reflete melhor registro, não necessariamente mais sismos.
+112	{0} eventos em {1} dias
+113	{0} eventos importados. O atlas os mostra rotulados como arquivo importado.
+114	{0} eventos reais de magnitude {1} ou superior entre {2} e {3}; magnitude máxima {4}.
+115	{0} fora do intervalo, anuladas
+116	{0} km
+117	{0} magnitude equivalente ({1} ano)
+118	{0} por identificador · {1} quase idênticos
+119	{0} profundidades fixadas em {1} km, marcadas.
+120	{0} pontos
+121	{0} registros baixados; {1} duplicados descartados.
+122	{0} regras de qualidade auditadas; {1} duplicados descartados; nenhum valor imputado.
+123	{0} variáveis
+124	{0} zonas-período na configuração principal.
+125	{0}–{1} km
+126	{0}–{1} km · intermediária
+127	{0}–{1} km · intermediária profunda
+128	{0}–{1} km · superficial
+129	{0}–{1} km · superficial profunda
+130	{0}, {1} eventos
+131	{0}, {1}:{2} (hora da Colômbia)
+132	{0}, {1}:{2} (UTC)
+133	{0}. Arquitetura
+134	{0}. Calibração e incerteza
+135	{0}. Dados
+136	{0}. Dados e limpeza
+137	{0}. Explicabilidade
+138	{0}. Incerteza
+139	{0}. Limitações
+140	{0}. Mapa de referência
+141	{0}. Modelos
+142	{0}. Objetivo
+143	{0}. O que se estima
+144	{0}. Validação
+145	{0}. Variáveis
+146	{0}. Variáveis (tabela principal)
+147	{0}. Zonas e períodos
+149	+{0} pts
+150	+{0} pontos
+151	± {0} km
+152	±{0} pts
+153	±{0} pontos
+154	−{0} km
+155	−{0} pts
+156	−{0} pontos
+157	A · gap ≤ {0}°, erro horizontal ≤ {1} km e RMS ≤ {2} s
+158	A menos de {0} km e dentro dos {1} dias anteriores ou posteriores. A proximidade não implica relação física entre os eventos.
+159	Abr
+160	abr de {0}
+161	Abra o
+162	Abril
+163	Abrir o assistente Nexo
+164	Abrir o atlas
+165	Abrir o comparador de modelos
+166	Abrir o modo história
+167	Abrir a previsão probabilística
+168	Abrir painel lateral
+169	Abrir a busca global e a paleta de comandos
+170	Abrir janela modal
+172	Ação
+173	Ações
+174	Destaque
+175	Destaque (texto) sobre superfície
+176	Aceitas
+177	Sobre o projeto
+178	Sobre o projeto · SismoNexo Colombia
+179	Aproximar
+180	Aproximar o atlas
+181	Aproximar e afastar
+182	Ativar a narração por voz
+183	atividade
+184	Atividade em zonas vizinhas ({0} ano)
+185	Atividade em zonas vizinhas ({0} dias)
+186	Atividade é o que já foi registrado. Ameaça é a probabilidade de o solo se mover com certa força a longo prazo. Exposição é o que existe no local. Vulnerabilidade é quão frágil é. Risco é a perda esperada ao combiná-las. Esta plataforma trabalha apenas com atividade.
+187	Atividade observada
+188	Atividade observada entre
+189	Atividade recente
+190	Atividade registrada com os filtros ativos
+191	Atividade sísmica
+192	Atividade sísmica registrada entre {0} e {1}
+193	Atual: {0}-{1}-{2} a {3}-{4}-{5}
+194	Acumulado
+195	Avançar
+196	Avançar um passo
+197	Além disso,
+198	adimensional
+199	advertência
+200	Advertência
+201	Aviso de uso acadêmico
+202	Aviso de uso acadêmico.
+203	Advertência.
+204	Afetados
+205	Ago
+206	Agosto
+207	Agrupamentos
+208	Agrupamento.
+209	Ajusta também a profundidade mediana. Valor real: {0}. Intervalo habitual: {1}–{2}.
+210	Ajusta também as contagens de {0} dias, {1} ano e {2} anos. Valor real: {3} (incomumente alto ou baixo em relação às demais zonas). Intervalo habitual: {4}–{5}.
+211	pelo menos um evento de magnitude
+212	Ao truncar o catálogo na origem da previsão, as variáveis não mudam: usam apenas eventos anteriores.
+213	Afastar
+214	alta
+215	Alta
+216	Alternativa tabular ao mapa: selecione um evento para ver seu detalhe.
+217	Alternativa tabular ao mapa. Selecione uma zona para ver seu detalhe e a explicação do modelo.
+218	Altura = profundidade
+219	Altura da coluna = profundidade do evento (representação esquemática, para cima). Largura = magnitude.
+220	Ameaça sísmica
+221	Ameaça sísmica oficial
+222	Amplie o intervalo de datas ou reduza a magnitude mínima.
+223	Amplie o intervalo de datas, reduza a magnitude mínima ou remova o filtro de localização.
+224	Amplo
+225	Amplitude do intervalo de incerteza ({0} %)
+226	Analisar
+227	Anexo metodológico
+228	Anéis; deixa ver sobreposições
+229	Animações
+231	Anterior
+232	Antes
+233	antes de calibrar). Período de validação:
+234	Antes de modelar, cada registro passa por {0} regras de qualidade. Eliminam-se duplicados, marcam-se as profundidades convencionais e nenhum valor é imputado. Cada regra fica em um registro de auditoria.
+235	Antes de serem usadas, as
+236	Ano
+238	Aparência
+239	Aplicação
+240	Apliquei estes filtros:
+241	Aprendizado de máquina
+242	Aqui o tempo é sempre respeitado. Treina-se com o passado, calibra-se com os anos seguintes e testa-se com um período posterior que o modelo nunca viu. Um detector automático busca vazamentos de informação.
+243	Aqui é reportado com {0} %: calcula-se com a frequência observada na validação para zonas-período com probabilidades parecidas. Um intervalo largo indica pouca informação.
+244	Aqui se usa o catálogo instrumental da Rede Sismológica Nacional da Colômbia (SGC), desde {0}. Um catálogo nunca é completo: os sismos pequenos são mais bem detectados onde e quando há mais estações.
+245	Arquivo de catálogo sísmico
+246	Arquivo importado muestra.csv. Voltar ao catálogo oficial
+247	Arquivo importado:
+248	Arquivo importado: muestra.csv
+249	Área sob a curva precisão-recall. Resume quão bem o modelo ordena os casos quando os positivos são escassos. Maior é melhor.
+251	Arraste e solte um arquivo aqui
+252	Assim se repete em
+253	Atalhos de teclado
+254	Atalhos de teclado disponíveis
+255	Atalhos de uma única tecla (T, F, N, G…)
+256	Atenção: magnitude acumulada, profundidade média está fora do intervalo histórico habitual; o modelo extrapola e sua resposta é pouco confiável.
+257	Atenção: há apenas {0} zonas-período com evento em toda a história. Com tão poucos casos, as diferenças entre modelos são pouco confiáveis.
+258	Atlas
+259	Atlas inteligente de atividade sísmica e previsão probabilística para a Colômbia
+260	Atlas sísmico
+261	Atlas sísmico · SismoNexo Colombia
+262	Atributos administrativos não usados (ato de criação, ano de vigência)
+263	Atributos internos do visualizador (identificadores de camada e estilos)
+264	Nenhum filtro foi alterado ainda.
+265	Autor
+266	Autor acadêmico:
+267	Autor, fontes, licenças, privacidade e termos
+268	Avisos de licença do software
+269	ajuda
+270	Azul: menos em B. Ocre: mais em B.
+271	B · boa
+272	B · gap ≤ {0}°, erro horizontal ≤ {1} km e RMS ≤ {2} s
+274	baixa
+275	Baixa
+276	Balanço:
+277	Barra lateral recolhida (só ícones)
+278	Base
+281	Bloco
+282	Bloco {0}: teste {1}–{2}
+283	blocos que avançam ano a ano, com uma separação de
+284	blocos. Em cada bloco treina-se com todo o passado, valida-se com os dois anos seguintes (calibração, limiar de decisão e pesos do híbrido) e testa-se com o ano posterior. Entre conjuntos deixa-se uma separação igual ao horizonte.
+285	Boosting
+286	Floresta aleatória de {0} árvores com subamostragem balanceada. Apenas na configuração principal ({1} dias, M ≥ {2}). Calibração isotônica.
+287	Botões
+288	Brier
+289	Brier score
+290	Brier score de cada modelo no ano de teste de cada bloco. Valores mais baixos são melhores; as altas simultâneas de todos os modelos indicam anos com atividade incomum.
+291	Brier score de cada modelo nas zonas de cada departamento com pelo menos {0} zonas-período avaliadas. Mais escuro é melhor. {1} departamentos.
+294	Buscar
+295	Buscar departamentos, municípios, coordenadas, vistas e ações
+296	Buscar lugar, vista ou ação
+297	Buscar um termo
+298	Buscar zona por nome
+299	Busca global e comandos
+300	C · gap ≤ {0}° e erro horizontal ≤ {1} km
+301	Cada bloco treina com o passado, calibra com os dois anos seguintes e é testado com o ano posterior. Entre blocos deixa-se uma separação igual ao horizonte.
+302	Cada linha da tabela de modelagem descreve uma zona em uma data de origem com variáveis calculadas apenas com o passado, e um rótulo que indica se no período seguinte houve pelo menos um sismo acima do limiar.
+303	Cada linha da tabela de modelagem é uma zona em uma
+304	Cada modelo usa a informação de forma diferente. Por isso todos são mostrados, comparados com a mesma validação, e informa-se qual foi escolhido e por quê.
+305	Cada sismo detectado se torna uma linha: quando ocorreu, onde, a que profundidade, com que magnitude e com quanta incerteza foi localizado.
+306	Cada transformação aplicada ao catálogo, em ordem, com o número de registros afetados e descartados.
+307	Cada valor do mapa é comunicado de cinco maneiras ao mesmo tempo: cor, padrão, rótulo, porcentagem e intervalo de incerteza. Assim não depende apenas da cor.
+308	Cada zona mostra a probabilidade de registrar pelo menos um evento acima do limiar nos próximos trinta dias. Uma probabilidade alta não é certeza, e uma baixa não é ausência de atividade. O mapa fala de atividade, não de danos.
+310	Queda do PR-AUC do gradient boosting ao embaralhar cada variável no último bloco de teste. A maior queda corresponde a eventos recentes ({0} dias).
+311	Calendário de completude
+312	Calibração
+313	Calibração (ECE)
+314	Calibração ajustada apenas com validação.
+315	calibração parcial
+316	Calibração parcial
+317	Calibração perfeita
+318	Calibração:
+319	calibrado
+320	Calibrado
+321	Qualidade A ou B
+322	Qualidade dos dados
+323	Qualidade dos dados (A ou B)
+324	Qualidade da localização
+325	Qualidade de localização (proporção A ou B, {0} ano)
+326	Qualidade dos dados
+327	Qualidade derivada
+328	Mudar para modo escuro
+329	Alternar entre modo claro e escuro
+330	Mudança
+331	Mudança da probabilidade, em pontos percentuais, ao subir ou baixar cada variável em {0} % de seu intervalo habitual, com as demais fixas no cenário atual.
+332	Mudança de sistema de processamento: SEISAN → SeisComP
+333	Mudança de sistema em {0}, documentada.
+334	Mudança em relação ao período anterior
+335	Mudanças de filtros no histórico
+336	Campos
+338	Camada de análise por zona
+339	Capacidade de ordenar (PR-AUC)
+340	Capacidade de ordenar zonas em cada ano de teste. A dispersão entre blocos é a medida de estabilidade.
+341	Camadas
+342	Capítulo
+343	Capítulo {0}: Como o projeto poderia evoluir?
+344	Capítulo {0}: Como se constrói uma zona-período?
+345	Capítulo {0}: Como se interpreta o mapa?
+346	Capítulo {0}: Como a informação é preparada?
+347	Capítulo {0}: Quais são as limitações?
+348	Capítulo {0}: Por que a validação deve respeitar o tempo?
+349	Capítulo {0}: Por que a Colômbia treme?
+350	Capítulo {0}: O que é uma probabilidade?
+351	Capítulo {0}: Que informação contém um catálogo sísmico?
+352	Capítulo {0}: Quais modelos foram comparados?
+353	Capítulo anterior ou seguinte
+354	Capítulos
+355	Carregamento (esqueleto que imita o conteúdo)
+356	Carregamento, erro, ausência de dados e conexão interrompida.
+357	Carregando conteúdo
+359	Casos
+360	Casos positivos por bloco de teste (grade de {0} km, {1} dias, M ≥ {2}).
+361	catálogo de sismicidade do SGC
+362	Catálogo de sismicidade RSNC (SEISAN), {0}-{1}-{2} a {3}-{4}-{5}
+363	Catálogo de sismicidade RSNC (SeisComP{0}), {1}-{2}-{3} até hoje
+364	Catálogo heterogêneo.
+365	Catálogo instrumental da RSNC (SGC): {0} eventos entre {1} e {2}, M ≥ {3}. Limpeza com {4} regras auditadas; sem imputação. Limites: DANE, MGN {5}.
+366	Catálogo instrumental RSNC · versão rsnc-{0}-{1}f{2}
+367	catálogo limpo
+368	Catálogo sísmico
+369	Catálogo Sísmico Integrado (CSI) para a Colômbia
+371	Célula H{0}
+372	Célula H{0} · {1} zonas
+373	Células quadradas
+374	Centralizar
+375	Centro de aprendizagem
+376	Centro de aprendizagem · SismoNexo Colombia
+377	Centro de qualidade do catálogo
+378	Centro de qualidade do catálogo · SismoNexo Colombia
+379	Proximidade espacial
+380	Proximidade temporal
+381	Fechar
+382	Fechar detalhe
+383	Fechar detalhe da zona
+384	Fechar painéis, folhas e janelas
+388	Números principais
+389	Algarismos tabulares: {0} · {1} · {2} % · {3}-{4}-{5}
+390	Cinco formas de dividir o território. Para a grade de {0} km e períodos de {1} dias, a tabela de modelagem tem
+391	Cinco palavras que não significam a mesma coisa
+392	Cinco unidades: departamento, município, hexágono e duas grades.
+393	Círculos grandes de uma só cor: grupos de eventos; seu tamanho indica quantos reúnem. Aproxime o mapa para separá-los.
+394	Cividis
+395	Claro
+396	Classe
+397	Cobertura
+398	Cobertura por departamento
+399	Cobertura temporal
+400	Cobertura e qualidade do catálogo
+401	Cobertura e qualidade: localizações A ou B
+402	Cobertura e rupturas
+403	Cobertura, dados ausentes, auditoria e importação
+404	Código derivado neste projeto a partir de gap, erro horizontal e RMS. Não é um código oficial do SGC.
+405	Código derivado neste projeto. {0} % dos eventos têm qualidade A ou B.
+406	Código QR com o endereço do atlas sísmico desta plataforma
+407	Coincide com o critério automático do pipeline (menor log-loss antes do teste final).
+408	COLÔMBIA
+409	A Colômbia está onde se encontram três placas tectônicas: Nazca, Caribe e América do Sul. Essa interação produz sismos superficiais na crosta e sismos profundos sob a cordilheira. O mapa mostra os eventos reais de magnitude cinco ou superior registrados desde mil novecentos e noventa e três.
+410	A Colômbia está no encontro das placas de Nazca, Caribe e América do Sul. Por isso treme com frequência, em profundidades muito diferentes: da crosta até mais de {0} km sob Santander.
+411	A Colômbia se move · {0}
+412	A Colômbia se move. Os dados nos ajudam a compreender como.
+414	Cor dos eventos
+415	Cor: profundidade
+416	Colunas {0}D
+417	colunas de maior magnitude de
+418	Colunas reconhecidas:
+419	Combinação
+420	Combinação logística das probabilidades da linha de base, da taxa tipo ETAS e do gradient boosting, ajustada no bloco de validação.
+421	Como o resultado deve ser interpretado
+422	Como ler a escala de probabilidade
+423	Como obter dados oficiais
+424	Como saber se um modelo serve
+425	Como são agrupados por zona e período
+426	Como se calcula uma probabilidade
+427	Como os eventos se tornam dados
+428	Como as estimativas são produzidas, com que dados, como são validadas e o que não podem dizer. Tudo o que é descrito aqui está implementado no pipeline do projeto.
+429	Como as estimativas são produzidas e validadas
+430	Como se valida um modelo sem olhar para o futuro
+431	Confortável
+432	Compacta
+433	Compare a profundidade média de Antioquia e Nariño
+434	Comparação de indicadores entre o período A e o período B
+435	Comparação de modelos
+436	Comparação de zonas
+437	Comparação lado a lado
+438	Comparação por região
+439	Comparador de modelos
+440	Comparador de modelos · SismoNexo Colombia
+441	Comparamos {0} famílias de modelos, da frequência histórica ao gradient boosting e um híbrido. Para a grade de cinquenta quilômetros, trinta dias e magnitude quatro, o melhor resultado foi do híbrido estatístico + ML.
+442	Comparar períodos
+443	Comparar períodos · SismoNexo Colombia
+444	Comparar zona
+445	Completo (desde {0})
+446	Compreender
+447	Verificação
+448	verifica em cada experimento: variáveis construídas com dados futuros (são recalculadas com o catálogo truncado), escaladores ajustados com todo o conjunto, duplicados entre conjuntos, janelas sobrepostas, réplicas próximas repartidas entre treino e teste, e variável-alvo entre as entradas.
+449	com
+450	com {0} eventos ou mais
+451	Com o limiar de decisão {0} % (o que maximiza F{1} na validação): {2} acertos com evento, {3} eventos não sinalizados, {4} sinalizações sem evento e {5} acertos sem evento.
+452	Com estes parâmetros não há um modelo treinado. Mostra-se a linha de base de frequência histórica recalculada com seus filtros; não tem validação walk-forward própria.
+453	com evento
+454	com evento (
+455	Com evento (positivos)
+456	Com eventos raros é mais informativa que a acurácia e que o ROC-AUC. Seu valor de referência é a prevalência: um modelo sem informação obtém um PR-AUC igual à proporção de positivos.
+457	Com o híbrido estatístico + ML, a estimativa passa de {0} % para {1} % (−{2} pontos).
+458	Com intervalo, modelo e versão
+459	Com as camadas ativas
+460	Com movimento reduzido, os deslocamentos do mapa, as ondas e as transições são substituídos por mudanças instantâneas ou esmaecimentos breves. A informação nunca depende de uma animação.
+461	com parâmetros fixos; sem modelo de fontes nem atenuação.
+462	Com resumo textual, tabela alternativa e exportação.
+463	Com dica
+464	Com uma taxa de
+465	Concentração ponderada por magnitude
+466	Conceitos, glossário e modo história
+469	Conexão interrompida
+470	Confiança
+471	Configurações
+472	Configurações · SismoNexo Colombia
+473	configurações treinadas
+474	configurações treinadas, e a interface indica isso.
+475	Conjunto de dados
+476	Conjunto de avaliação
+477	Conhecer a metodologia
+478	Conserve em toda exportação a fonte, a versão dos dados e a do modelo.
+479	Constelação
+480	Constelação sísmica
+481	Constelação sísmica · SismoNexo Colombia
+482	Construção da rede (ordem cronológica)
+483	Contadores da reprodução
+484	Conteúdo da metodologia
+485	Contagem anual de eventos com magnitude {0} ou superior entre {1} e {2}. O máximo foi {3} eventos em um ano.
+486	Contagem anual de eventos do período. Fonte: SGC–RSNC.
+487	Contagem por célula
+488	Contagem por célula de ≈ {0} km
+489	Contorno
+490	Recolher barra lateral
+491	Contraste
+492	Contraste medido no tema atual (WCAG {0} AA exige {1}:{2} em texto normal)
+493	Contribuição SHAP no modelo de gradient boosting. À direita, a variável elevou a estimativa; à esquerda, a reduziu. Isso não demonstra causalidade.
+494	Controles da apresentação
+495	Controles de reprodução
+496	Conversa com Nexo
+497	Conversão de campos numéricos
+498	Coordenadas
+499	Coordenadas fora da janela de estudo

@@ -1,0 +1,510 @@
+index
+Infer (µs/row)
+=
+Public information from DANE, free to use with attribution (National Geostatistical Framework).
+Public information from the Colombian Geological Survey. Reference article in the Boletín Geológico (open access, CC BY {0}).
+Public information from the Colombian Geological Survey. Academic use with attribution, under the SGC terms of use and Law {0} of {1} on transparency and access to public information.
+Report
+Full report (JSON)
+Historical activity report
+Data quality report
+Report by period
+Report by zone
+Probabilistic report
+Reports
+Reports · SismoNexo Colombia
+Academic and executive reports built with the active data and filters. Every export includes author, source, data and model versions, and the academic-use notice.
+Exportable academic and executive reports
+Home
+Interval start (UTC)
+Institution
+=
+Institution:
+intermediate
+deep intermediate
+Interpretability
+Interpretability {0} of {1}; training of {2} s per block; PR-AUC between {3} and {4} depending on the time block.
+Interpretation
+Interval ({0}%)
+{0}% interval
+uncertainty interval
+Uncertainty interval
+Uncertainty interval (
+Uncertainty interval ({0}%)
+{0}% uncertainty interval: from {1}% to {2}%.
+{0}% uncertainty interval: from {1}% to > {2}%.
+{0}% interval from the frequency observed in validation (Jeffreys) per probability band. The interface never shows {1}% or {2}%.
+PR-AUC variation ranges
+Go to {0}° N, {1}° W
+=
+=
+=
+Jul
+Jul {0}
+July
+Jun
+June
+km
+km, q =
+Recent activity increased: {0} events in the last {1} days, compared with a historical average of {2} for an equal period.
+Recent activity is similar to usual: {0} events in the last {1} days (historical average: {2}).
+Official hazard is an SGC product for periods of hundreds of years. It must not be confused with this platform's experimental forecast.
+The sidebar, the glass top bar and the phone's bottom navigation are the ones on this very page.
+The search for similar periods is only available in the trained configurations.
+It is officially computed by the Colombian Geological Survey with seismogenic source and attenuation models. It is expressed, for example, as peak ground acceleration (PGA) for a return period of {0} years. It is not the same as this platform's experimental {1}-day forecast.
+Quality A–D is a code derived in this project (gap, horizontal error and RMS); it is not an official SGC code.
+Complexity is only accepted if it improves on the baseline.
+The visual link between two events only indicates that they occurred close in space and time. It does not imply physical causality or that one triggered the other.
+=
+The estimate is about
+The source publishes the time in UTC. Records with an unreadable date are discarded.
+Seismic information turned into understandable knowledge.
+Cleaning applies
+The historical-frequency baseline gives {0}% for this zone. The chosen model raises it (+{1} points).
+The median for
+The platform has no accounts, uses no cookies, includes no analytics or trackers, and sends nothing you do in it to any server.
+the probability of recording at least one event with magnitude equal to or greater than a threshold
+Probability is communicated at once with colour, pattern, label, percentage and uncertainty interval.
+final test
+The test flags the most marked change in each series (p-value < {0}). A change in the catalogue does not imply a change in seismicity: it usually reflects the evolution of the network, the processing or the reporting criteria. The models are validated on recent blocks to limit this effect.
+Validation is
+walk-forward validation
+Scenario lab
+Scenario lab · SismoNexo Colombia
+=
+The {0} zones with the highest probability. For another, search for it by name.
+The optional relief, reference map and official hazard layers request images from third-party servers (AWS, OpenStreetMap and SGC), which receive your IP address as in any web visit. They are off by default.
+The estimates are experimental and separate from official products. Colombia's official seismic hazard is computed by the Colombian Geological Survey for return periods of hundreds of years; here it is shown only as a reference layer.
+The ripples are a visual representation of the event, not an exact physical simulation.
+Depths < {0} or > {1} km become missing. A depth of exactly {2} km usually indicates a depth fixed by the analyst; it is flagged, not discarded.
+Aftershocks cluster activity in time and space. If a single sequence is split between training and test, the metrics are inflated.
+The breaks detected mainly reflect the evolution of the network and the processing. That is why the models are evaluated on recent blocks and long series are interpreted with caution.
+Aftershock sequences raise the metrics of models that use recent activity; the leakage detector warns about it.
+Variables use only the past.
+Views are kept while this tab is open. To keep them longer, copy the link.
+Latitude
+Latitude, longitude
+Latitude, longitude (WGS{0})
+Latitude, longitude, depth, magnitude, phases, RMS, gap and errors are converted to numbers. Blanks are kept as missing data (not imputed).
+Next come
+Reading the matrix
+Read the full methodology
+=
+Light
+Gutenberg–Richter law
+Legend
+Caption · {0}. Source: Colombian Geological Survey.
+Map legend
+Licence
+Limitations
+Limitations and responsible use
+Department boundaries
+Municipal boundaries
+Boundaries: DANE, MGN {0} · Events: SGC–RSNC
+baseline
+Baseline
+Baseline for this zone
+Historical-frequency baseline
+historical-frequency baseline (recalculated)
+Historical-frequency baseline (recalculated)
+Historical-frequency baseline: Statistical.
+Recalculated baseline
+Baseline recalculated in the browser
+Timeline: ← →
+Timeline: Space
+Coverage timeline
+Ordered list of earthquakes with date, location, depth, magnitude and quality measures.
+Done: I undid those filters and restored the previous ones.
+=
+What has already happened and been recorded: how many earthquakes, where, at what depth and of what magnitude.
+A or B locations
+Quality A or B locations
+=
+=
+Logist.
+Logistic
+Original logo at {0}, {1} and {2} px; in two tones and in a single ink.
+Longitude
+The {0} largest-magnitude events in the catalogue.
+Shortcuts with Ctrl or ⌘ remain active.
+Colours use a logarithmic scale because cases without an event dominate.
+The concepts needed to read the atlas and the forecast without misinterpreting them.
+The counts describe activity observed in the catalogue, not the complete real activity: small earthquakes are detected better where and when the station network is denser. Changes between years should be read together with the evolution of the network and the processing (system change in {0}).
+The other models try to improve the rate using recent activity, surroundings and depth. All are compared against the baseline; if they do not clearly beat it, they are not used.
+The two most recent blocks form the final test and play no part in choosing the default model. The current model is retrained with everything before
+Scenarios live only in this tab's memory (
+High-magnitude events are scarce; for M ≥ {0} the differences between models are unreliable.
+Large events are very scarce: for magnitude {0} or greater the models barely improve on historical frequency.
+The active magnitude, depth and location filters apply to both periods. Dates are UTC days.
+Filters, views and scenarios live in the tab's memory and in the browser address. Files you import are processed on your device and discarded when you close the tab.
+Hexagons have equidistant neighbours, which makes it easier to measure activity in the surroundings.
+The machine-learning models exist only for the trained configurations ({0}, {1} and {2} days; M ≥ {3}, {4} and {5}; all depths; full history; no smoothing).
+The classification models are calibrated with isotonic regression fitted on the validation block only. So that a band with few cases does not produce probabilities of exactly {0} or {1}, each step is shrunk towards the prevalence with {2} pseudo-observations. The interface never shows {3}% or {4}%.
+The periods fall on different sides of {0}, when the SGC changed the processing system and the magnitude types. Part of the difference may be due to that change and not to seismic activity.
+The weights are a design decision of the project and are open to discussion. Changing them may change the recommendation when the models are very close to each other.
+Historical records go back to {0}. The modern instrumental catalogue, which this platform works with, begins in {1} with the National Seismological Network.
+The results are statistical associations over historical patterns. The explanations (SHAP, permutation, partial dependence) describe the model, not the physical cause of earthquakes.
+The next steps are to homogenise magnitudes, fit a full ETAS model, evaluate the forecasts prospectively and, with exposure data, move towards risk. The QR code opens the atlas.
+Small earthquakes are only detected where there are stations nearby. When the network grows, more small earthquakes appear in the catalogue without the Earth having changed. That is why it is always worth looking at the magnitude of completeness.
+The initial values are the zone's actual values at the date of the current forecast.
+=
+Place
+M ≥ {0} · baseline only
+Count MAE
+magnitude
+Magnitude
+Magnitude > {0} or below the query threshold ({1}). Flagged for review.
+magnitude ≥ {0}; year {1}
+magnitude ≥ {0}; year {1}; department: Santander
+Magnitude above which the catalogue records practically every earthquake.
+Accumulated magnitude
+Equivalent accumulated magnitude ({0} year)
+Equivalent accumulated magnitude ({0} year) ↑
+Equivalent accumulated magnitude ({0} year) ↓
+Magnitude missing or out of range (−{0} to {1})
+Magnitude of completeness (Mc)
+Estimated magnitude of completeness by year
+Magnitude of a single event with the same total energy. Actual value: {0}. Usual range: {1}–{2}.
+equivalent magnitude
+Maximum magnitude
+Maximum magnitude ({0} year)
+Maximum magnitude ({0} days)
+Maximum magnitude in the step
+Maximum magnitude recorded
+Mean magnitude ({0} year)
+Monthly median magnitude
+Minimum magnitude
+Minimum node magnitude
+Mw magnitude
+Mw magnitude and magnitude error
+Reported magnitude
+Magnitude and magnitude type.
+Outlier magnitudes
+Missing magnitudes
+Homogeneous magnitudes (Mw) and completeness by region.
+Mixed magnitudes.
+Magnitudes: events per month in each period
+=
+Map
+Map (PNG)
+National seismic hazard map — PGA, {0}-year return period
+Heat map
+Map of Colombia with {0} real events of magnitude {1} or greater, coloured by depth.
+Map of the difference in activity between periods. Use the arrow keys to pan, plus and minus to zoom, zero to return to the national extent.
+Map of real events with filters and layers
+Map of the seismic time machine. Use the arrow keys to pan, plus and minus to zoom, zero to return to the national extent.
+Map of estimated probability by zone. Use the arrow keys to pan, plus and minus to zoom, zero to return to the national extent and Enter to select whatever is at the centre.
+Reference map
+Map of the seismic atlas of Colombia. Use the arrow keys to pan, plus and minus to zoom, zero to return to the national extent and Enter to select whatever is at the centre.
+Schematic map of Colombia with {0} real events of magnitude {1} or greater recorded between {2} and {3}. Colour indicates depth.
+Map: {0}
+Map: ⇧ + arrows
+Map: + and −
+Map: catalogue density
+Map: arrows
+Map: forecast from the default model
+Map: current forecast
+=
+Time machine
+Time machine, period comparison and constellation
+Mar
+sea and neighbouring countries
+flag
+March
+More
+Lighter = wider interval = less information.
+More than {0} km
+More than {0} km · deep
+more than {0} historical records and at least half with a quality A or B location
+more.
+Confusion matrix: Hybrid
+Confusion matrix: Baseline
+Confusion matrix: Poisson / NB
+Missing-data matrix
+=
+Maximum
+May
+May
+Higher
+Largest sequence
+MB and
+=
+=
+medium
+Medium
+Average of all zones
+=
+Median
+Median before
+Annual median of the reported location error. It went from {0} km in {1} to {2} km in {3}, as the station network grew.
+Median after
+Measure of an earthquake's size. Each unit corresponds to about {0} times more energy released.
+Quality measures: error, gap, phases.
+=
+=
+Best PR-AUC
+Brier gain
+Brier gain = {0} − model Brier / baseline Brier. ECE = expected calibration error. σ PR-AUC = standard deviation between time blocks.
+Brier gain over the baseline
+Relative improvement in the Brier score with respect to historical frequency. To the right, better than the baseline; to the left, worse. A value close to zero means the added complexity contributes nothing.
+Lower
+lowest log-loss before the final test
+month
+Month
+=
+A method that splits a model's estimate among its variables: how much each one pushed it up or down.
+Method, validation and limitations
+Methodology
+Methodology · SismoNexo Colombia
+Metrics for each model in
+Validation metrics for the model families
+Metrics by model
+Metrics, calibration and chronological validation
+My municipality shows a high probability. Should I worry?
+=
+=
+Model
+Trained and validated model
+Statistical seismicity model in which each earthquake temporarily raises the rate of nearby earthquakes.
+Model versus baseline
+Simplest possible model: the historical frequency of each zone.
+Default model
+Sequential model (recurrent networks): not trained. With
+Model used
+Model:
+moderate
+Moderate
+Demo mode
+Story mode
+Story mode · SismoNexo Colombia
+Story mode: ← → Space
+Offline mode ready: the application and the data already viewed remain available without a network.
+Playback moment
+Moment saved: {0}.
+Saved moments
+=
+Show notice
+Show this list of shortcuts
+=
+Motion and accessibility
+=
+Show me the events of magnitude greater than {0} during {1}
+Show me the events of magnitude greater than {0} in Santander during {1}
+Move the rate: it is not data from any zone, it only illustrates the formula.
+Municipality
+Municipality · {0} zones
+Municipalities
+=
+Very high
+Very low
+N · no reported metrics
+Nothing to undo
+Nothing to redo
+Main navigation
+Navigation and tabs
+=
+=
+Neutral
+=
+=
+Bucaramanga nest
+No event matches the filters
+No event in the catalogue meets those conditions.
+No known method predicts the date, place and magnitude of an earthquake.
+No term contains “
+None
+No zone-period pair appears in more than one set.
+No input variable is the label or a near-exact copy of it (maximum absolute correlation {0}, in “nt_{1}”).
+None
+data confidence level
+Data confidence level
+Spatial smoothing level
+Not available:
+I do not issue alerts or predict earthquakes.
+It is not prediction.
+There is no validated method for predicting individual earthquakes.
+The data could not be loaded
+There is no connection to the data server.
+There is no physical evidence of seismic seasonality; the variable exists so that the model can discard it.
+There is no exposure or vulnerability.
+There are no other events recorded in that neighbourhood.
+No zone is selected: the one with the highest probability is used. To choose another, select it in “Probabilistic forecast” and press “Create report”.
+There was no event
+Not reported (imported file)
+We do not try to anticipate an isolated earthquake. We divide the territory into zones and time into periods. Each zone, at each date, is described only by its past, and we note whether there was at least one event above the threshold in the following thirty days.
+Do not mix official seismic hazard with this platform's experimental probability.
+Do not present hypothetical scenarios as facts or hide the uncertainty when sharing results.
+I cannot answer that: nobody can predict when or where an earthquake will occur, and this platform does not issue alerts. What I can show you is the recorded activity and the estimated probability by zone, with its uncertainty. For official information and preparedness advice, consult the Colombian Geological Survey and the National Unit for Disaster Risk Management.
+Not reported
+No official download service with a documented licence was confirmed; the layer is not included.
+It is not chosen by accuracy.
+When, exactly where or how large an earthquake will be is not estimated. Nor is damage estimated: that is risk, and it requires exposure and vulnerability data that this project does not include.
+They were not homogenised to Mw; an “M ≥ {0}” threshold combines ML, MLr and others.
+Exposure and vulnerability are not included: the results do not measure risk or expected damage.
+No replacement values are shown: the view stays empty until the real data are available.
+Individual earthquakes are not predicted: the estimates are probabilities by zone and period.
+Individual earthquakes are not predicted. Large events are very scarce, the catalogue changed system in twenty eighteen, and we do not include exposure or vulnerability. This platform does not replace the Colombian Geological Survey or risk management authorities.
+Did not flag
+I have no information to answer that with the platform's data, and I would rather not make things up. I can help with event filters, comparisons between departments, recent activity, definitions and models. Try one of the examples.
+Do not use the results as an alert, an official notice or a basis for decisions on evacuation, civil protection, insurance or investment.
+No. It does not issue alerts or predict individual earthquakes. For official information consult the Colombian Geological Survey and risk management authorities.
+View name
+Scenario name
+Internal name
+Informational note in the accent colour.
+Nov
+November
+=
+Number of events per half-unit magnitude interval. The vertical scale is logarithmic because large events are much less frequent (Gutenberg–Richter law).
+Number of records
+A number between {0}% and {1}% that expresses how often something is expected to happen in similar situations.
+Average number of events the model expects in the zone during the horizon.
+Never {0}% or {1}%.
+A random split is never used. The two most recent blocks form the
+=
+or greater
+or greater in
+or greater between
+Oct
+Oct {0}
+October
+Hide subtitles
+Playback options
+OpenStreetMap; requires a connection
+Face north
+Dark
+Other
+=
+Reference page
+Palette and contrast
+Floating panels and map controls
+Full screen
+For
+To update the full catalogue and retrain the models, use the project script:
+To search for a municipality or coordinates, use the global search.
+For each model: minimum, maximum and overall PR-AUC across the time blocks. Wide ranges indicate unstable results.
+For each zone and each horizon, the platform estimates
+For H{0} cell, {1} days and M ≥ {2}, the best balance is offered by Poisson / negative binomial.
+For ≈ {0} km grid, {1} days and M ≥ {2}, the best balance is offered by the statistical + ML hybrid.
+For ≈ {0} km grid, {1} days and M ≥ {2}, the best balance is offered by logistic regression.
+For department, {0} days and M ≥ {1}, the best balance is offered by the ETAS-inspired rate.
+For full details use “Explain this estimate” in the zone panel.
+For the SEISAN period it is built as 'Municipality - Department' from the fields published by the SGC.
+To pin a region, choose a department under “Location”. Playback respects all filters.
+For magnitude {0} or greater there are very few cases; differences between models are unreliable and the baseline is usually the best option.
+To keep the network legible, only the
+For municipality, {0} days and M ≥ {1}, the best balance is offered by Poisson / negative binomial.
+Network parameters
+Forecast parameters
+Parameters of the ETAS-like term: α =
+Start from a zone's actual values, change some variables and see how the estimate changes. It is for understanding the model, not for forecasting.
+Actual split of the last validation block
+Step
+Time step
+Pause
+It heavily penalises very confident probabilities that turn out wrong. Lower is better.
+Expected losses: the result of combining hazard, exposure and vulnerability.
+Project profile
+period
+Period
+Period A
+Period A (reference)
+Period B
+Period B (compared)
+Period queried:
+Historical period used
+Period starting on
+Period:
+Similar historical periods
+past periods of this same zone most similar to the current one, in
+Quick periods
+People, buildings and infrastructure located where an earthquake can be felt.
+PGA, {0}-year return period. Requires a connection.
+=
+Few interface colours; colour is reserved for data.
+=
+Poisson / negative binomial
+Poisson / negative binomial: Statistical (counts).
+Poisson / NB
+Poisson with two inputs: the historical rate and a term that sums, for the events of the last year, productivity by magnitude × Omori decay × spatial kernel. Fixed parameters; it is not a full ETAS fit.
+Polygons with their values
+Privacy policy
+Weighted by magnitude
+by an SGC analyst
+Below Mc events are missing. It changes with time and region depending on network density. That is why an increase in small earthquakes may be due to better detection and not to more activity.
+Default (Statistical + ML hybrid)
+For example: calibration
+For example: Los Santos
+That is why the catalogue is reorganised into zone-periods: each zone, at each date, described only by what had already happened (how many recent events, how large, how long ago), and with a label: was there at least one event above the threshold in the following {0} days?
+Percentage of each period's events in the project's five depth classes.
+Percentage of records with no data by variable and year. Missing values are not imputed: they are kept as missing and the models handle them explicitly.
+Home page and narrative tour of the project
+Positive
+=
+PR-AUC (walk-forward)
+PR-AUC of {0} versus {1} for the baseline.
+PR-AUC across all blocks. No-information reference: {0}.
+PR-AUC by time block
+PR-AUC and Brier are the main metrics. Accuracy is not used to choose a model.
+Caution
+Caution on surface
+Precision
+Precision versus recall as the decision threshold varies. The dotted line is the prevalence ({0}), equivalent to a model with no information. Largest area: Hybrid.
+Precision versus recall as the decision threshold varies. The dotted line is the prevalence ({0}), equivalent to a model with no information. Largest area: Baseline.
+Precision versus recall as the decision threshold varies. The dotted line is the prevalence ({0}), equivalent to a model with no information. Largest area: Poisson / NB.
+Precision and recall
+Precision: of the zones flagged, how many had an event. Recall: of the zones with an event, how many were flagged.
+Predicting would mean saying when, where and how large an earthquake will be; nobody can do that. Forecasting probabilistically means estimating how often something happens in similar situations, and stating it with its uncertainty.
+Preferences for this session. The platform uses no accounts or persistent storage: they reset when the tab is closed, except theme, language and time zone, which travel in the link.
+Question for Nexo
+Frequently asked questions
+Prepare offline mode
+Presentation
+Presentation of the project in ten chapters
+prevalence {0}%
+First case
+First I need to know which zone you mean. Open “Probabilistic forecast”, select a zone on the map and ask me again.
+Prob.
+Probability
+Probability = expected frequency in similar situations.
+Probability with actual values and with the scenario for each model that can be evaluated in the browser.
+Probability of activity by zone and period
+Probability of at least one event M ≥
+Probability of at least one event M ≥ {0} in {1} days ({2} to {3}). Experimental estimate.
+Probability that the model assigns a higher value to a positive case than to a negative one taken at random.
+Probability that the ground at a place will exceed a given level of shaking over a long period (tens or hundreds of years).
+Probability of recording
+Probability of recording at least one event of this magnitude or greater.
+Probability of recording at least one event of magnitude {0} or greater between {1} and {2}: {3}% ({4}% interval: {5}% to {6}%).
+Estimated probability
+Estimated probability (experimental)
+Estimated probability by zone; the report's zone is outlined in black. Experimental estimate, not official.
+Estimated probability by zone. Experimental estimate by SismoNexo; it is not an official product.
+Estimated probability by zone. Experimental estimate, not official.
+Average probability
+Average probability assigned by the model when only this variable varies, from {0}% to {1}%. It is an average relationship in the model, not a physical law.
+Forecast probability
+Forecast probability versus observed frequency, in {0} bands. On the diagonal the model is calibrated. Expected calibration error: {1}; slope {2}. Status: partial calibration.
+Forecast probability versus observed frequency, in {0} bands. On the diagonal the model is calibrated. Expected calibration error: {1}; slope {2}. Status: calibrated.
+Probability assigned by the model when only recent frequency varies within its usual range, with the rest of the scenario fixed. It goes from {0}% to {1}%.
+Reliable probabilities (log-loss)
+probabilistic
+Provenance
+Provenance and traceability of each dataset. Study window:
+Processing applied
+It produces misleadingly good metrics. This platform runs six automatic checks: variables with future data, scalers fitted on the whole set, duplicates, overlapping windows, split aftershocks and the target variable among the inputs.
+Official products (SGC)
+Depth
+Depth
+Depth (km)
+Depth of the recorded events (
+Depth missing, out of range or fixed at {0} km
+Depth fixed at {0} km
+Depth out of range (the event is kept without depth)
+Maximum depth (km)
+Mean depth
+Mean depth ({0} year)
+Mean depth ({0} year) ↑
+Mean depth ({0} year) ↓
+Median depth
+Median depth ({0} year)

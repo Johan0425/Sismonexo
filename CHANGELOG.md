@@ -2,6 +2,18 @@
 
 Formato basado en «Keep a Changelog». Las fechas están en AAAA-MM-DD.
 
+## [0.2.0] — 2026-10-12
+
+### Añadido
+- Selector de idioma en la barra superior, en el modo historia y en Configuración: español (por defecto), inglés y portugués. El idioma se conserva en la URL (`?idioma=en`).
+- Capa de traducción en tiempo de ejecución (`web/src/lib/i18n.ts`): diccionarios de unos 1.900 textos por idioma, cifras y fechas con el formato de cada idioma, y patrones para textos con nombres propios.
+- Herramientas `i18n:harvest`, `i18n:build` e `i18n:check`.
+- Límite de errores por vista: un fallo en una vista ya no deja la aplicación en blanco.
+
+### Limitaciones conocidas
+- No se traducen nombres de lugares, identificadores ni archivos exportados (PDF, CSV, JSON).
+- La narración por voz del modo historia sigue en español.
+
 ## [0.1.0] — 2026-10-12
 
 Primera versión del prototipo.

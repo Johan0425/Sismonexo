@@ -5,6 +5,7 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { loadIndex, useAsync } from '@/lib/data'
 import { DISCLAIMER } from '@/lib/export'
 import { fmtDate } from '@/lib/format'
+import { LANGS, setLanguage, type Lang } from '@/lib/i18n'
 import { PHONE_PRIMARY, ROUTES } from '@/lib/routes'
 import { toQuery, useApp } from '@/lib/store'
 import { Logo } from './Logo'
@@ -79,11 +80,39 @@ function DataStatus() {
       <span tabIndex={0} style={{ borderRadius: 999 }}>
         <Pill tone={stale ? 'caution' : undefined} icon={stale ? <TriangleAlert size={14} aria-hidden /> : <CircleCheck size={14} aria-hidden style={{ color: 'var(--positive)' }} />}>
           <span className="hide-phone">{stale ? 'Datos desactualizados · ' : 'Datos reales · '}</span>
-          <span className="num">{fmtDate(end)}</span>
+          <span className="num hide-narrow">{fmtDate(end)}</span>
         </Pill>
       </span>
     </Tooltip>
   )
+}
+
+/** Selector de idioma compacto. Los nombres de los idiomas no se traducen. */
+export function LanguageSelect() {
+  const lang = useApp((s) => s.prefs.lang)
+  const setPrefs = useApp((s) => s.setPrefs)
+  return (
+    <select className="lang-select" data-no-i18n aria-label="Idioma · Language · Idioma" title="Idioma · Language" value={lang} onChange={(e) => setPrefs({ lang: e.target.value as Lang })}>
+      {LANGS.map((l) => (
+        <option key={l.code} value={l.code} lang={l.html} title={l.name}>
+          {l.short}
+        </option>
+      ))}
+    </select>
+  )
+}
+
+/** Aplica el idioma elegido y avisa si el diccionario no se pudo cargar. */
+export function LanguageEffect() {
+  const lang = useApp((s) => s.prefs.lang)
+  useEffect(() => {
+    void setLanguage(lang).then((ok) => {
+      if (ok) return
+      useApp.getState().setPrefs({ lang: 'es' })
+      useApp.getState().toast('No fue posible cargar ese idioma; la interfaz sigue en español.')
+    })
+  }, [lang])
+  return null
 }
 
 export function TopBar() {
@@ -124,6 +153,7 @@ export function TopBar() {
         </span>
       </button>
       <span className="grow" />
+      <LanguageSelect />
       <DataStatus />
       <IconButton label="Abrir el asistente Nexo" onClick={() => setOpen('nexo', true)}>
         <MessageCircle size={20} aria-hidden />

@@ -330,3 +330,44 @@ describe('asistente Nexo', () => {
     expect(parseQuery('¿Quién ganó el partido?', depts, today).kind).toBe('desconocido')
   })
 })
+
+describe('traducción de la interfaz', () => {
+  it('separa cifras y fechas del texto para reutilizar una sola entrada', async () => {
+    const { normalize } = await import('./i18n')
+    expect(normalize('66.987 eventos cumplen los filtros.').key).toBe('{0} eventos cumplen los filtros.')
+    expect(normalize('Actualizado el 10 de oct de 2026 · 0,9 %').key).toBe('Actualizado el {0} · {1} %')
+    expect(normalize('11 de sept de 2024').tokens[0]).toMatchObject({ kind: 'date', d: 11, m: 8, y: '2024' })
+    expect(normalize('mar 2023').tokens[0]).toMatchObject({ kind: 'month', m: 2, y: '2023' })
+  })
+  it('traduce, reescribe cifras y fechas en el formato del idioma y conserva los espacios', async () => {
+    const { translate } = await import('./i18n')
+    const dict = { '{0} eventos cumplen los filtros.': '{0} events match the filters.', 'Actualizado el {0} · {1} %': 'Updated on {0} · {1}%', Santander: 'Santander', '~^Quitar filtro: (.+)$': 'Remove filter: $1', 'Calidad A y B': 'Quality A and B' }
+    expect(translate('66.987 eventos cumplen los filtros.', dict, 'en')).toBe('66,987 events match the filters.')
+    expect(translate('  Actualizado el 10 de oct de 2026 · 0,9 % ', dict, 'en')).toBe('  Updated on Oct 10, 2026 · 0.9% ')
+    expect(translate('66.987 eventos cumplen los filtros.', { '{0} eventos cumplen los filtros.': '{0} eventos atendem aos filtros.' }, 'pt')).toBe('66.987 eventos atendem aos filtros.')
+    expect(translate('11 de oct de 2026', {}, 'en')).toBe('Oct 11, 2026')
+    expect(translate('11 de oct de 2026', {}, 'pt')).toBe('11 de out de 2026')
+    expect(translate('1.234,5', {}, 'en')).toBe('1,234.5')
+    expect(translate('rsnc-2026.10.10', {}, 'en')).toBeNull() // no es una cifra con formato español: no se toca
+  })
+  it('resuelve familias con nombres propios mediante patrones y nunca inventa traducciones', async () => {
+    const { translate } = await import('./i18n')
+    const dict = { '~^Quitar filtro: (.+)$': 'Remove filter: $1', 'Calidad A y B': 'Quality A and B' }
+    expect(translate('Quitar filtro: Santander', dict, 'en')).toBe('Remove filter: Santander')
+    expect(translate('Quitar filtro: Calidad A y B', dict, 'en')).toBe('Remove filter: Quality A and B')
+    expect(translate('Texto que no está en el diccionario', dict, 'en')).toBeNull()
+  })
+  it('los diccionarios publicados conservan los marcadores y cubren los textos esenciales', () => {
+    for (const lang of ['en', 'pt']) {
+      const d = JSON.parse(readFileSync(resolve(__dirname, `../../public/i18n/${lang}.json`), 'utf8')) as Record<string, string>
+      expect(Object.keys(d).length).toBeGreaterThan(1800)
+      for (const [k, v] of Object.entries(d)) {
+        if (k.startsWith('~')) continue
+        expect([...new Set(v.match(/\{\d+\}/g) ?? [])].sort(), k).toEqual([...new Set(k.match(/\{\d+\}/g) ?? [])].sort())
+      }
+      // La advertencia permanente y la frase de certeza deben existir en todos los idiomas.
+      expect(d['Esta plataforma presenta estimaciones académicas basadas en patrones históricos. No constituye una alerta oficial, no predice terremotos individuales y no reemplaza la información del Servicio Geológico Colombiano ni de las autoridades de gestión del riesgo.']).toBeTruthy()
+      expect(d['Una probabilidad alta no significa que un terremoto ocurrirá con certeza. Una probabilidad baja tampoco significa ausencia total de actividad.']).toBeTruthy()
+    }
+  })
+})

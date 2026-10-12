@@ -14,7 +14,8 @@ Una aplicación web que:
 - estima, por zona y horizonte (7, 30 y 90 días; principal 30), la **probabilidad de registrar al menos un evento** sobre un umbral de magnitud, siempre con su intervalo de incertidumbre;
 - compara siete familias de modelos con **validación cronológica walk-forward** y un detector automático de fugas de información;
 - explica cada estimación (SHAP, permutación, dependencias parciales, línea base y periodos parecidos);
-- documenta la calidad y la procedencia de cada dato, y exporta informes en PDF, CSV, PNG, GeoJSON y JSON.
+- documenta la calidad y la procedencia de cada dato, y exporta informes en PDF, CSV, PNG, GeoJSON y JSON;
+- está disponible en **español, inglés y portugués** (selector en la barra superior).
 
 No predice la fecha, el lugar ni la magnitud de ningún sismo.
 
@@ -94,15 +95,30 @@ El repositorio está conectado al proyecto de Vercel `sismonexo-colombia`: **cad
 ```bash
 cd web
 npm run typecheck
-npm test                             # 50 pruebas unitarias y de componentes (Vitest)
+npm test                             # 54 pruebas unitarias y de componentes (Vitest)
 npx playwright install chromium      # solo la primera vez
-npm run test:e2e                     # 57 pruebas de extremo a extremo (Playwright + axe)
+npm run test:e2e                     # 60 pruebas de extremo a extremo (Playwright + axe)
 
 cd ../pipeline && python -m pytest tests -q      # 20 pruebas: limpieza, zonas, fugas, validación cronológica
 cd ../api && python -m pytest tests -q           # 20 pruebas de la API
 ```
 
 Las pruebas de extremo a extremo cubren: todas las rutas sin errores de consola, filtros → mapa/gráficos/URL, teclado, accesibilidad WCAG 2.2 AA en claro y oscuro, anchos de 375 a 2560 px, movimiento reducido, zonas horarias, importación y exportaciones.
+
+## Idiomas
+
+El contenido se escribe en español. Inglés y portugués se aplican en tiempo de ejecución con diccionarios (`web/public/i18n/*.json`, ≈ 1.900 textos cada uno) que se descargan solo al elegir el idioma. El idioma viaja en la URL (`?idioma=en`).
+
+```bash
+cd web
+npm run dev                 # en otra terminal
+npm run i18n:harvest        # recorre la aplicación y actualiza src/i18n/keys.json con los textos visibles
+# traduzca los textos nuevos en src/i18n/<idioma>/ (ver scripts/build-i18n.py)
+npm run i18n:build          # valida marcadores y genera public/i18n/<idioma>.json
+npm run i18n:check en       # lista lo que quedó sin traducir
+```
+
+No se traducen los nombres de lugares, los identificadores ni los archivos exportados (PDF, CSV, JSON). Si falta una traducción, el texto aparece en español.
 
 ## Fuentes de datos
 

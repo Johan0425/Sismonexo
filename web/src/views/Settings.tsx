@@ -1,6 +1,7 @@
 // Configuración: preferencias de la sesión. Nada se guarda en el dispositivo; el tema y la zona horaria viajan en la URL.
 import { Page } from '@/components/Shell'
 import { Button, Card, Note, Segmented, Switch } from '@/components/ui'
+import { LANGS } from '@/lib/i18n'
 import { useApp } from '@/lib/store'
 
 async function prepareOffline(toast: (t: string) => void) {
@@ -44,8 +45,12 @@ export default function Settings() {
             </div>
           </div>
         </Card>
-        <Card title="Fechas y horas">
+        <Card title="Idioma, fechas y horas">
           <div className="stack">
+            <div data-no-i18n>
+              <Segmented label="Idioma · Language" hideLabel={false} value={prefs.lang} onChange={(v) => setPrefs({ lang: v })} options={LANGS.map((l) => ({ value: l.code, label: l.name }))} />
+            </div>
+            <p className="small muted">El contenido se escribe en español y se traduce en la interfaz. Los nombres de lugares, los identificadores y los archivos exportados (PDF, CSV, JSON) se mantienen en español. Si falta una traducción, el texto aparece en español.</p>
             <Segmented label="Zona horaria para mostrar eventos" hideLabel={false} value={prefs.tz} onChange={(v) => setPrefs({ tz: v })} options={[{ value: 'colombia', label: 'Hora de Colombia (UTC−5)' }, { value: 'utc', label: 'UTC' }]} />
             <p className="small muted">El catálogo registra las horas en UTC. Los filtros de fecha y los periodos del pronóstico usan siempre días UTC completos; esta opción solo cambia cómo se muestra la hora de cada evento.</p>
           </div>

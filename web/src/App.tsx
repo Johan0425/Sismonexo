@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { CommandPalette, GlobalKeys, Onboarding, ShortcutsDialog } from './components/Palette'
-import { BottomNav, ConnectionEffect, Disclaimer, PrefsEffect, Sidebar, TopBar, UrlSync } from './components/Shell'
+import { BottomNav, ConnectionEffect, Disclaimer, LanguageEffect, PrefsEffect, Sidebar, TopBar, UrlSync } from './components/Shell'
 import { EmptyState, LiveRegion, PageSkeleton, Toasts } from './components/ui'
 import { loadIndex } from './lib/data'
 import { ROUTES } from './lib/routes'
@@ -97,6 +97,7 @@ export default function App() {
     <>
       <UrlSync />
       <PrefsEffect />
+      <LanguageEffect />
       <ConnectionEffect />
       <GlobalKeys />
       {loc.pathname === '/historia' ? (

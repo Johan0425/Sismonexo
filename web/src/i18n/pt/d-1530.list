@@ -1,0 +1,494 @@
+Profundidade mediana (km)
+Profundidade mediana dos eventos de cada passo. As mudanças bruscas costumam refletir sequências locais ou mudanças na rede de estações, não necessariamente uma mudança física regional.
+Profundidade mediana mensal
+Profundidade mínima (km)
+Profundidade: proporção por classe
+Profundidades ausentes
+Programa:
+Faz a média da taxa com as zonas vizinhas.
+Prever não é predizer
+Previsão
+Previsão atualizada: {0} zonas, probabilidade média {1} %, modelo Híbrido estatístico + ML.
+Previsão atualizada: {0} zonas, probabilidade média {1} %, modelo Linha de base de frequência histórica (recalculada).
+Previsão atualizada: {0} zonas, probabilidade média {1} %, modelo Linha de base de frequência histórica.
+Previsão atualizada: {0} zonas, probabilidade média {1} %, modelo Poisson / binomial negativa.
+Previsão atualizada: {0} zonas, probabilidade média < {1} %, modelo Poisson / binomial negativa.
+Previsão gerada
+Previsão por zona (CSV)
+Previsão por zona (GeoJSON)
+Previsão probabilística
+Previsão probabilística · SismoNexo Colombia
+Previsão vigente da configuração principal. Estimativa experimental.
+Previsão vigente por zona com sua incerteza
+proporção
+Protótipo funcional do anteprojeto de conclusão de curso. Seu propósito é mostrar, com dados públicos e métodos reprodutíveis, até onde pode chegar uma previsão probabilística de atividade sísmica por zona e período, e onde estão seus limites.
+Provém da frequência observada na validação para zonas-período com probabilidades parecidas.
+Próximos {0} dias
+Próximos {0} dias · M ≥ {1} · Grade ≈ {2} km
+Projeto
+teste
+Teste
+Teste (o mais recente)
+Teste de componentes, paleta e estados
+Teste de Pettitt (um ponto de mudança na mediana) sobre séries mensais.
+Teste de todos os componentes de base. Serve para validar hierarquia, contraste e estados em modo claro e escuro antes de construir as vistas.
+teste final
+teste final ({0} blocos mais recentes)
+Teste final (mais recente)
+Pode ser fracionária (por exemplo, {0} eventos em {1} dias). Com uma taxa λ, a probabilidade de pelo menos um evento em um processo de Poisson é {2} − e^(−λ).
+Posso filtrar eventos por magnitude, data, profundidade e departamento; comparar profundidades entre departamentos; listar onde houve mais atividade recente; explicar uma estimativa; criar um relatório; definir termos e dizer qual modelo está mais bem calibrado. Tente um dos exemplos.
+=
+Pulsos
+Pontuação de {0} a {1} por critério ({2} = o melhor entre os modelos comparados). Pesos: PR-AUC {3} %, log-loss {4} %, calibração {5} %, interpretabilidade {6} %, estabilidade {7} %, custo {8} %.
+Ponto da superfície situado logo acima do hipocentro.
+Pontos
+pontos percentuais.
+=
+=
+O que é
+O que faz
+O que influenciou
+Quão completo e confiável é o catálogo com que a plataforma trabalha, e o que foi feito com cada registro antes de usá-lo.
+Quão propensos a danos são os elementos expostos (por exemplo, conforme o tipo de construção).
+Remover {0}
+Remover comparação
+Remover filtro: {0}-{1}-{2} → {3}-{4}-{5}
+Remover filtro: M ≥ {0}
+Remover filtro: Santander
+R{0} · Departamento e município por junção espacial (DANE, MGN {1})
+R{0} · Descrição da localização
+R{0} · Duplicados aproximados
+R{0} · Duplicados por identificador
+R{0} · Estado de revisão
+R{0} · Data e hora em UTC (ISO {1}) · R{2} · Conversão de campos numéricos · R{3} · Coordenadas válidas dentro da janela de estudo · R{4} · Magnitude reportada · R{5} · Duplicados por identificador · R{6} · Duplicados aproximados · R{7} · Profundidade ausente, fora do intervalo ou fixada em {8} km · R{9} · Família do tipo de magnitude · R{10} · Departamento e município por junção espacial (DANE, MGN {11}) · R{12} · Descrição da localização · R{13} · Erro horizontal e código de qualidade de localização · R{14} · Estado de revisão · R{15} · Magnitudes atípicas
+R{0} · Profundidade ausente, fora do intervalo ou fixada em {1} km
+=
+Random Forest não é avaliado no navegador por seu tamanho.
+Random Forest só é treinado na configuração principal ({0} dias, M ≥ {1}).
+Random Forest: Aprendizado de máquina.
+Intervalo em que razoavelmente pode estar o valor real, dado o caráter limitado dos dados.
+=
+=
+Real
+Real ({0})
+Real frente a hipotético
+=
+Recall segundo a profundidade mediana dos eventos da zona-período.
+Rejeitadas ou corrigidas
+Rede de {0} eventos de magnitude {1} ou superior com {2} ligações de proximidade. {3} sequências de dois ou mais eventos; a maior reúne {4}.
+Reduzidas
+Referência
+Região
+registra atividade em um
+Registro duplicado
+Registro original (SGC)
+registrou um evento de magnitude {0} ou superior.
+Registros
+Registros a ≤ {0} s, ≤ {1}° e ≤ {2} unidades de magnitude de um registro anterior. Conserva-se o primeiro.
+Registros baixados: {0}; finais: {1}; descartados: {2} (duplicados).
+Registros descartados
+registros finais. O mesmo registro está em
+Registros históricos
+Registros históricos na zona
+Registros totais
+Registros visíveis (CSV)
+Registros visíveis (GeoJSON)
+registros; consultado em
+Regra
+Regras de qualidade aplicadas ao catálogo
+regras de qualidade documentadas: eliminam-se duplicados, marcam-se profundidades convencionais e nada é imputado em silêncio.
+Regras de validação que encontraram problemas
+regras em ordem e registra quantas linhas cada uma afeta. Apenas duplicados são descartados (
+Regras e auditoria
+Regressão de Poisson sobre a contagem de eventos; a probabilidade usa uma binomial negativa (NB{0}) cuja sobredispersão é estimada por momentos.
+Regressão logística
+Regressão logística com ponderação de classes sobre as {0} variáveis padronizadas. Calibração isotônica.
+Regressão logística: Estatístico / ML linear.
+Refazer
+Tentar novamente
+Relação
+Relação empírica: para cada unidade de magnitude, os sismos são cerca de dez vezes menos frequentes.
+Relevo
+Desempenho por departamento (Brier score)
+Desempenho por magnitude
+Desempenho por profundidade
+Repetir o tour inicial
+Réplica
+Réplicas próximas repartidas entre conjuntos
+Representação de eventos
+Reproduzir
+Reproduzir a construção
+Reproduzir ou pausar
+Requer conexão
+Resolução
+Resolução geográfica
+em relação à de
+Resposta à frequência recente
+Redefinir filtros
+Redefinir valores
+Resultado
+Resultado da validação
+Resultado:
+Resultados
+Resumo
+Resumo dos eventos filtrados
+Resumo do experimento
+Resumo da previsão
+Resumo executivo
+Resumo e tabela
+Voltar
+Voltar ou avançar um passo
+Voltar um passo
+Revisado por analista
+Revisados
+Revisados por analista
+Verifique o endereço ou use a busca para encontrar uma vista.
+Verifique sua conexão; os dados já carregados continuam disponíveis.
+Risco sísmico
+=
+=
+=
+=
+=
+Girar e inclinar
+Ruptura provável
+Rupturas estruturais (teste de Pettitt)
+Saem
+=
+=
+Sair do modo história
+Pular para o conteúdo
+=
+=
+=
+=
+=
+=
+=
+Agrupam-se variantes (MLr_{0}, MLr_{1}, MLv, Mw…) em famílias. A magnitude original não é convertida nem homogeneizada: os tipos não são equivalentes entre si.
+é atribuído assim: «calibrado» se o erro de calibração esperado (ECE) é de {0} ou menos e a inclinação está entre {1} e {2}; «calibração parcial» se o ECE é de {3} ou menos; «não calibrado» nos demais casos; «sem avaliar» se há menos de {4} positivos.
+É comparado com a linha de base, com dados que não viu e respeitando o tempo. Com eventos raros, acertar «não acontece nada» é fácil: por isso se usam PR-AUC, Brier e calibração, não a acurácia.
+Comparam-se sete famílias, da mais simples à mais flexível. Não se treinou um modelo sequencial (redes recorrentes): o número de zonas-período com evento não o justifica.
+Descartam-se registros sem data ou sem magnitude · Duplicados por identificador · Conserva-se a magnitude Mw homogeneizada publicada pelo CSI
+É desenhada abaixo dos eventos.
+A probabilidade foi estimada em {0} zonas. A probabilidade média é {1} %; {2} zonas têm {3} % ou mais.
+Fica salvo apenas durante esta sessão.
+É mostrada como camada opcional do atlas diretamente do serviço de mapas do SGC; não é baixada nem modificada.
+Mostram-se as
+registrou-se pelo menos um evento acima do limiar (
+Resume-se com o valor b, próximo de {0} em muitas regiões. Explica por que os eventos grandes são raros e difíceis de modelar.
+Verifica-se com a curva de confiabilidade. Aqui se usa calibração isotônica ajustada apenas com o bloco de validação.
+Usa-se o catálogo instrumental da Rede Sismológica Nacional da Colômbia, baixado dos formulários oficiais de consulta do SGC:
+Usa-se a linha de base recalculada porque foi escolhido:
+Usado apenas como contexto histórico. Não alimenta os modelos de previsão.
+Seção do explorador histórico
+Seções de qualidade
+Sequência selecionada
+Sequências
+Sequências agrupadas segundo o lugar de seu evento de maior magnitude.
+Sequências por região
+Secundário
+Secundário · {0}. Catálogo instrumental da Rede Sismológica Nacional da Colômbia.
+Conforme o sistema
+Seis classes. Cada uma tem cor, padrão, rótulo e intervalo.
+Seis verificações automáticas sobre a tabela e as partições reais deste experimento.
+=
+=
+=
+Selecionado
+Selecione outro modelo na tabela de métricas para ver sua curva.
+Selecione uma sequência
+semana
+Semana
+Sensibilidade do modelo
+Sinalizou evento
+Set
+Separação entre conjuntos
+Setembro
+Série
+Série temporal de {0} eventos agrupados por ano. O máximo foi de {1} eventos no intervalo que começa em {2}.
+Série temporal de {0} eventos agrupados por semana. O máximo foi de {1} eventos no intervalo que começa em {2}.
+Serviço Geológico Colombiano
+Serviço Geológico Colombiano · produto oficial, não gerado por esta plataforma
+Serviço Geológico Colombiano (SGC)
+Serviço Geológico Colombiano (SGC) — Rede Sismológica Nacional da Colômbia
+Serviço Geológico Colombiano (SGC) — Rede Sismológica Nacional da Colômbia, catálogo de sismicidade
+Sessão local sem conta: nada do que você fizer aqui é enviado a um servidor.
+=
+SHAP em log-odds do modelo de gradient boosting antes da calibração isotônica.
+Se misturássemos os dados ao acaso, o modelo veria réplicas de uma mesma sequência no treino e no teste, e pareceria melhor do que é. Aqui sempre se treina com o passado e se testa com o futuro, em blocos que avançam ano a ano.
+Sempre com intervalo de incerteza.
+Sete famílias de modelos avaliadas com a mesma validação cronológica. Nenhum modelo é escolhido por acurácia: com eventos raros, acertar «não acontece nada» quase sempre não demonstra utilidade.
+Significa que no catálogo essa zona registrou poucos eventos acima do limiar. Não garante ausência de atividade: o catálogo cobre apenas algumas décadas e os grandes sismos têm períodos de recorrência muito mais longos.
+Seguinte
+=
+Simplificação geométrica no servidor: {0}° (departamentos) e {1}° (municípios) · Reparo de geometrias inválidas
+Sem correspondências
+Sem dado
+Sem erro de localização
+sem avaliar
+Sem eventos para resumir com os filtros atuais.
+Sem achados
+sem informação
+sem informação: {0}
+Sem magnitude não é possível avaliar limiares; o registro é descartado e contabilizado.
+Sem métricas reportadas
+Sem modelo treinado por:
+Sem resultados para «
+Sem risco.
+=
+Sismicidade superficial, intermediária e profunda.
+Sismo que segue outro maior na mesma região, dentro de uma sequência.
+=
+=
+SismoNexo Colombia · Atlas de atividade sísmica e previsão probabilística
+SismoNexo Colombia é um protótipo acadêmico que organiza o catálogo sísmico público do Serviço Geológico Colombiano e estima, por zona e período, a probabilidade de registrar atividade acima de um limiar de magnitude. Não prevê sismos individuais nem emite alertas.
+SismoNexo Colombia, ir para o início
+Sismos de magnitude {0} ou superior, {1}–{2}
+Sistema
+Sistema de design
+Sistema de design · SismoNexo Colombia
+Site oficial de ameaça sísmica
+Só conta eventos
+Só o último ano
+Só localizações de qualidade A e B
+Só os últimos {0} anos
+São
+São cinco conceitos diferentes:
+Sou Nexo. Converto perguntas em filtros e cálculos sobre o catálogo real. Não sou um modelo generativo: se não tenho a informação, eu digo.
+Suavização e intervalos aproximados
+Solte-o aqui. Você verá quais linhas são aceitas, quais são rejeitadas e por quê, antes de usá-lo.
+=
+soma de todas as zonas
+Superfície principal
+Superfície secundária
+Superfície terciária
+Tabela de regras de qualidade e registro de auditoria
+Tabela rolável
+Tabela principal
+Tabela principal (CSV)
+Tabela principal: atividade por ano
+Tabela principal: eventos de maior magnitude
+Tabela principal: métricas
+Tabela principal: regras de qualidade e auditoria
+Tabela principal: zonas com maior probabilidade
+Tamanho = magnitude · Linha mais intensa = eventos mais próximos no tempo
+Tamanho da zona (log₁₀ km²)
+Tamanho: magnitude
+Cartões e indicadores
+Taxa de falsos positivos
+Taxa de verdadeiros positivos
+Taxa de verdadeiros positivos frente a falsos positivos. A diagonal corresponde a um modelo sem informação. Com classes muito desbalanceadas, esta curva tende a parecer melhor do que o modelo serve na prática.
+Taxa esperada
+Taxa esperada de eventos
+Taxa esperada de eventos em {0} dias (λ)
+Taxa histórica
+Taxa histórica da zona com uma priori Gama que a aproxima da média de todas as zonas quando há poucos dados. P = {0} − e^(−taxa).
+Taxa histórica observada
+Taxa histórica observada (M ≥ {0})
+Taxa histórica acima do limiar
+Taxa inspirada em ETAS
+Taxa inspirada em ETAS: Estatístico (sismológico).
+Taxa mensal por intervalo de magnitude. O período A registrou {0} eventos por mês e o B {1}.
+Taxa usada: {0} eventos por {1} dias.
+=
+Teclas
+Tema
+Tema, densidade, movimento e fuso horário
+Tendência ({0} anos)
+Termo de atividade recente ponderada (tipo ETAS)
+Termos de uso acadêmico
+termos.
+Texto explicativo
+Texto principal
+Texto principal sobre fundo
+Texto principal sobre superfície
+Texto secundário
+Texto secundário sobre superfície
+Texto secundário sobre superfície secundária
+Texto sobre destaque
+Texto terciário sobre superfície
+Tempo desde o último evento
+Tempo desde o último evento ↑
+Tempo desde o último evento ↓
+Tempo desde o último evento acima do limiar
+Tempo e distância
+Tipo
+Tipo de arquivo não aceito (.exe). Use CSV, JSON ou GeoJSON.
+Tipo de relatório
+Tipo de magnitude
+Tipo ETAS
+Tipografia
+Tipografia: fonte do sistema de cada dispositivo. Ícones: Lucide. O logotipo e o design da interface são originais deste projeto.
+Tipos de magnitude
+Tipos de magnitude ao longo do tempo
+Título
+Título de página · {0}
+Título de seção · {0}
+Título de cartão · {0}
+Toda a janela de estudo
+Todas
+Todas as profundidades
+Todas as variáveis de entrada têm dado para esta zona.
+Todo o catálogo
+Todo o catálogo (real)
+Tudo isso descreve o comportamento do modelo. São associações estatísticas: não demonstram causalidade nem indicam que uma variável provoque sismos.
+Todo modelo mais complexo deve ser comparado com ela. Se não a supera com clareza, a complexidade adicional não se justifica.
+Tudo vive na memória desta aba. Para conservar uma vista, copie seu link.
+Todos (M ≥ {0})
+Todos os blocos walk-forward
+Todos os eventos registrados (M ≥ {0}). Ajusta também as contagens de {1} dias e {2} ano. Valor real: {3} (incomumente alto ou baixo em relação às demais zonas). Intervalo habitual: {4}–{5}.
+Todos os modelos
+=
+=
+Total
+transformar
+Traço sísmico: assinatura visual (estática)
+Três placas: Nazca, Caribe e América do Sul.
+Localização
+Última atualização
+Última atualização do catálogo: {0} · {1} eventos reais do Serviço Geológico Colombiano
+Último evento
+Último {0} ano
+Últimos {0} anos
+Últimos {0} anos (desde {1})
+Últimos {0} dias
+Limiar de magnitude
+Um
+Um arquivo importado só é usado para explorar (atlas e explorador histórico) durante esta sessão e sempre aparece rotulado como tal. As previsões, o laboratório e o comparador continuam baseados no catálogo oficial versão
+Um atlas da atividade sísmica registrada desde {0} e uma previsão
+Um catálogo é uma lista ordenada de sismos. Cada linha diz quando ocorreu, onde, a que profundidade, com que magnitude e com quanta incerteza foi localizado. Usamos o catálogo público da Rede Sismológica Nacional do Serviço Geológico Colombiano.
+Um catálogo nunca está completo
+Um círculo por evento
+Um mesmo identificador de evento aparece mais de uma vez (por exemplo, na sobreposição de consultas).
+Um modelo está calibrado se, quando diz {0} %, o evento ocorre cerca de {1} % das vezes.
+Um modelo só se justifica se melhora a linha de base de frequência histórica em dados posteriores ao seu treino, e se suas probabilidades estão calibradas. Quando a melhora é pequena ou instável entre blocos, prefere-se o modelo mais simples.
+Um registro real do catálogo
+Um sismo isolado não pode ser antecipado. O que se pode medir é com que frequência uma
+Uma só cor
+Uma página com os números e mensagens principais
+Uma probabilidade alta de atividade não equivale a risco alto, e vice-versa. Esta plataforma estima probabilidade de atividade; não calcula risco.
+Uma probabilidade alta indica que nessa zona se registram sismos acima do limiar com frequência, como ocorre no ninho de Bucaramanga, onde a atividade é muito profunda e raramente causa danos. Não fala de danos nem de um evento iminente. A preparação para sismos é recomendável em todo o país, com qualquer valor do mapa.
+Uma probabilidade alta não significa que um terremoto ocorrerá com certeza. Uma probabilidade baixa tampouco significa ausência total de atividade.
+Uma probabilidade alta não significa que um terremoto ocorrerá com certeza. Uma probabilidade baixa tampouco significa ausência total de atividade. Os valores expressam com que frequência zonas-período parecidas registraram pelo menos um evento no passado; não indicam danos nem um evento iminente.
+Uma probabilidade de {0} % significa que, de cada {1} zonas-período parecidas no passado, cerca de {2} registraram um evento. Não diz quais nem quando.
+Uma probabilidade de {0} % significa que, de cada {1} zonas-período semelhantes, em cerca de {2} observou-se pelo menos um evento. Não diz em quais. Uma probabilidade alta não é certeza e uma baixa não é ausência de atividade.
+Uma probabilidade de vinte por cento significa que, de cada cem zonas-período parecidas, cerca de vinte registraram um evento. Não diz quais. Por isso cada valor é mostrado com seu intervalo de incerteza.
+Uma tinta
+=
+Unidade
+Unidade de análise
+Unidade de análise: uma zona (departamento, município ou célula) observada durante um período ({0}, {1} ou {2} dias).
+Unidade: Grade ≈ {0} km · Horizonte: {1} dias · Limiar: M ≥ {2}
+Unidade: Grade ≈ {0} km · Horizonte: {1} dias ({2} a {3}) · Limiar: M ≥ {4} · Modelo: Híbrido estatístico + ML
+Unidade: grade ≈ {0} km. Altere-a em «Previsão».
+Unidades de análise
+Unidades: Departamento ({0}), Município ({1}), Célula H{2} ({3}), Grade ≈ {4} km ({5}), Grade ≈ {6} km ({7}). Cada linha é uma zona em uma data de origem; as variáveis usam apenas o passado e o rótulo o intervalo seguinte.
+URL de consulta
+Usa os filtros ativos de data, magnitude, profundidade e localização. Altere-os no atlas.
+Usa os mesmos filtros de data, profundidade e localização que o restante da aplicação.
+Use latitude entre −{0} e {1} e longitude entre −{2} e −{3}
+Use um valor entre {0} e {1}.
+Uso permitido: ensino, pesquisa, divulgação e avaliação acadêmica, citando o projeto e a fonte dos dados (SGC).
+Você:
+=
+Vai de {0} (perfeito) a {1}. Premia ao mesmo tempo a discriminação e a calibração. Com eventos raros todos os modelos têm valores baixos, por isso convém olhar a melhora relativa frente à linha de base (Brier skill score).
+Vale {0} para um modelo sem informação e {1} para um perfeito. Com classes muito desbalanceadas pode parecer alto mesmo que o modelo tenha pouca utilidade prática.
+Validação
+Validação (calibração e limiar)
+Validação de «malo.csv»
+Validação de «muestra.csv»
+Validação de «x.exe»
+Validação de «x.json»
+Validação que respeita o tempo
+Validação walk-forward
+Validação walk-forward do híbrido estatístico + ML: PR-AUC {0} (linha de base {1}; sem informação {2}), Brier {3} (+{4} % frente à base). Estado de calibração: calibrado.
+Valor
+Valor de base do modelo em log-odds:
+valor convencional da fonte
+Valores atípicos de magnitude
+Valores reais
+Variável
+Variável do mapa
+Variável-alvo incluída como entrada
+Variáveis construídas com dados futuros
+Variáveis de entrada dos modelos
+Variáveis do cenário
+Variáveis eliminadas
+Variáveis mais influentes
+Variáveis modificadas: eventos recentes ({0} dias) ({1} → {2}); eventos recentes ({3} dias) ({4} → {5}); eventos do último ano ({6} → {7}); taxa histórica acima do limiar ({8} → {9}); magnitude acumulada equivalente ({10} ano) ({11} → {12}); profundidade média ({13} ano) ({14} → {15}); profundidade mediana ({16} ano) ({17} → {18}); tempo desde o último evento ({19} → {20}).
+Variáveis modificadas: taxa histórica acima do limiar ({0} → {1}); magnitude acumulada equivalente ({2} ano) ({3} → {4}); profundidade média ({5} ano) ({6} → {7}); profundidade mediana ({8} ano) ({9} → {10}); tempo desde o último evento ({11} → {12}); tempo desde o último evento acima do limiar ({13} → {14}); distância ao evento M ≥ {15} mais recente ({16} → {17}); sazonalidade (seno do dia do ano) (-{18} → {19}).
+variáveis por zona-período, em
+Variação da profundidade
+Variação em relação ao período anterior
+Velocidade
+Janela histórica da taxa
+Janelas sobrepostas
+Ver atalhos de teclado
+Ver como a janela avança
+Ver dados em tabela
+Ver o centro de qualidade do catálogo
+Ver o mapa
+Ver o modo história
+Ver o sistema de design
+Ver no glossário
+Ver gráfico
+Ver a comparação de modelos
+Ver procedência completa e licenças
+Ver rede
+Ver regras, procedência e licenças
+Ver resultados
+Ver tabela
+Versão dos dados
+Versão do conjunto de dados:
+Versão do dataset
+Versão do modelo
+Versão do modelo:
+versão rsnc-{0}-{1}f{2}
+Versões e registro de mudanças
+=
+=
+Visíveis ao aproximar
+Vista
+Vista de grafo
+Vista do mapa
+Vista geográfica
+Vista inclinada
+Vista inclinada ({0}D)
+Pré-visualização do relatório
+Pré-visualização: primeiras {0} linhas aceitas
+Vistas
+Vistas salvas
+Vistas salvas (
+Voltar à extensão nacional
+Vulnerabilidade
+walk-forward de janela crescente
+Walk-forward de janela crescente em {0} blocos com separação temporal igual ao horizonte. Calibração isotônica ajustada apenas na validação. Os dois blocos mais recentes são o teste final. Detector automático de seis tipos de vazamento de informação.
+WGS{0}, com metadados de procedência
+WGS{0}. Janela: lat -{1} a {2}, lon -{3} a -{4}.
+e a {0} % de sua própria linha de base histórica
+e
+e escolha a consulta avançada ({0}–{1} ou {2} até hoje).
+e não participam da escolha do modelo padrão, que é o de menor log-loss nos blocos anteriores.
+e é calibrado com o período
+zona
+Zona
+Zona com o valor mais alto da previsão vigente (
+zona de fronteira
+zona de fronteira ({0}° N, {1}° O)
+zona de fronteira ({0}° N, {1}° O) · {2} %
+Zona geográfica
+Fuso horário para mostrar eventos
+Zona e modelo
+Zona-período
+Zonas
+Zonas com {0} % ou mais
+Zonas com maior probabilidade
+zonas-período
+zonas-período ·
+Zonas-período avaliadas
+zonas-período positivas, o volume de dados não justifica um modelo dessa capacidade e o risco de sobreajuste seria alto. A «taxa inspirada em ETAS» usa parâmetros fixos tomados da literatura; não é um ajuste ETAS completo por máxima verossimilhança.
+zonas-período e
+=
+=
+=

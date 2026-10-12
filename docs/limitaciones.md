@@ -27,3 +27,4 @@
 9. La narración del modo historia depende de la voz del navegador.
 10. Docker Compose se validó en sintaxis; no se ejecutó de extremo a extremo en este equipo.
 11. La API no está desplegada: el sitio de Vercel es estático y autosuficiente.
+12. Idiomas: la interfaz está en español, inglés y portugués, pero los informes y archivos exportados, los nombres de lugares y la narración por voz permanecen en español. Las traducciones no fueron revisadas por hablantes nativos; un texto sin traducción se muestra en español.

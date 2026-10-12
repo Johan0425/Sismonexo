@@ -95,6 +95,10 @@ El **modo historia** presenta el proyecto en diez capítulos: flechas para avanz
 
 Tema (sistema, claro, oscuro), densidad, animaciones reducidas, atajos de una tecla, zona horaria (Colombia o UTC) y preparación del modo sin conexión. Toda la aplicación se puede usar con teclado; cada gráfico tiene resumen textual y tabla alternativa; el contraste cumple WCAG 2.2 AA.
 
-## 12. Compartir
+## 12. Idioma
 
-La dirección del navegador contiene filtros, parámetros, capas, encuadre del mapa, selección, tema y zona horaria. Copiarla es suficiente para que otra persona vea lo mismo.
+El selector pequeño de la barra superior (ES · EN · PT) cambia la interfaz entre español, inglés y portugués; también está en Configuración y en el modo historia. Las cifras y fechas adoptan el formato del idioma. Los nombres de lugares y los archivos exportados se mantienen en español.
+
+## 13. Compartir
+
+La dirección del navegador contiene filtros, parámetros, capas, encuadre del mapa, selección, tema, idioma y zona horaria. Copiarla es suficiente para que otra persona vea lo mismo.

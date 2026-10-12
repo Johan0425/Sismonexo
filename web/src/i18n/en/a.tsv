@@ -1,0 +1,478 @@
+0	, with which the models were trained.
+1	, within the window {0}° S–{1}° N and {2}°–{3}° W. Each original response is kept with its SHA-{4} fingerprint.
+2	, the model with the lowest calibration error (ECE) in walk-forward validation is
+3	, status “
+4	, compared with
+5	, reference magnitude
+6	, window of
+7	; optional official layer.
+8	; maximum magnitude
+9	; using
+10	: ECE
+11	: the interval spans
+12	: trains up to
+13	: for each zone, how likely it is to record at least one earthquake above a given magnitude in the next {0} days, with its uncertainty. It does not predict individual earthquakes.
+14	: estimated probability of
+15	How could the project evolve?
+16	How is a zone-period built?
+17	How should the map be read?
+18	How is the information prepared?
+19	What is the difference between hazard and risk?
+20	Which model is best calibrated?
+21	What are the limitations?
+22	Where do the data come from?
+23	Can this platform warn me before an earthquake?
+24	Why do the values change between models?
+25	Why does the model show this value?
+26	Why must validation respect time?
+27	Why does Colombia shake?
+28	What is the uncertainty interval?
+29	What is a probability?
+30	What information does a seismic catalogue contain?
+31	Which model should I use?
+32	Which models were compared?
+33	What does the Brier score mean?
+34	Which zones had the most activity in the last {0} days?
+35	Who won the match?
+36	Will there be an earthquake tomorrow?
+37	And if the probability is low?
+38	. Even as the rate grows, the probability approaches {0}% without reaching it.
+39	. From “Seismic atlas → Export” you can download the filtered, visible events as CSV or GeoJSON, with their provenance.
+40	. Length of the catalogue used:
+41	. The atlas already shows them.
+42	. The main horizon is {0} days; there are also {1} and {2} days. The trained thresholds are magnitude {3}, {4} and {5}.
+43	. In the history analysed, values like these were associated with more zone-periods with an event.
+44	. Calibration status:
+45	. Being well calibrated is not enough: how much it improves on the baseline also matters.
+46	. Experimental estimate, not official.
+47	. Source: SGC–RSNC, version
+48	. Source: SGC–RSNC.
+49	. Risk management:
+50	. The “sequences” are connected components of the proximity network; they are not a seismological classification of foreshocks and aftershocks.
+51	. Origins are spaced every {0} days ({1}-day horizon) or every {2} days ({3}- and {4}-day horizons). Variables use only events before the origin; the label uses the events in the interval [origin, origin + horizon).
+52	. Minimum magnitude queried:
+53	. It must not be used to make civil protection decisions.
+54	. It says nothing about damage: risk also depends on who and what is exposed and on how it is built.
+55	. I did not change your filters.
+56	. No random split is used.
+57	. Forecast generated on
+58	. Reduce the date range for a finer step.
+59	. These are associations observed in the history; this does not demonstrate causality.
+60	. Its only information is the zone's historical frequency (
+61	. Raise the minimum magnitude or shorten the period.
+62	. Main model version:
+63	· distance
+64	· generated on
+65	· interpretability
+66	· max M {0}
+67	· Story mode
+68	· not applicable
+69	· default
+70	· version
+71	· back to the official catalogue
+72	'Revisado' (SEISAN) and 'manual' (SeisComP) are interpreted as a solution reviewed by an analyst.
+73	“—”: fewer than {0} cases; not computed.
+74	“Why does the model show this value?” combines five elements: SHAP values from the gradient boosting model for the zone, permutation importance (drop in PR-AUC in the last test block), partial dependence of the main variables, comparison with the baseline, and the historical periods of the same zone most similar to the current one.
+75	“Scenario {0}” saved in memory for this session.
+76	”. Try the name of a department, a municipality or a pair of coordinates (latitude, longitude).
+77	”. Try another word.
+78	(before:
+79	(optional layer) — © OpenStreetMap contributors, ODbL licence.
+80	(optional layer) — Mapzen Terrain Tiles on AWS Open Data.
+81	(in {0} original files kept with their SHA-{1} fingerprint)
+82	(in the complete instrumental catalogue)
+83	(equivalent to
+84	({0}% interval:
+85	(baseline
+86	(no-information reference:
+87	(opens in a new tab)
+88	(see README). Accepted column names: event_datetime_utc or fecha + hora_utc; latitude or latitud; longitude or longitud; magnitude or magnitud; depth_km or profundidad.
+89	), varying between blocks from
+90	), compared with an average of
+91	). The model chosen was
+93	{0} — first version of the prototype
+95	{0} to {1}
+96	{0} years
+97	{0} automatic
+98	{0} walk-forward blocks
+99	{0} walk-forward blocks with a {1}-day gap.
+100	{0} expanding-window walk-forward blocks, with a {1}-day gap between training, validation and test. {2} zone-periods; {3} with an event (prevalence {4}%). Default model: Statistical + ML hybrid (lowest log-loss in the walk-forward folds before the final test block.)
+101	{0} model configurations trained ({1} geographic units × {2} horizons × {3} thresholds) with walk-forward validation and a leakage detector.
+102	{0} of {1} events · up to {2}
+103	{0} of {1} events in the first {2} days of the test blocks ({3}%) have an event within {4} km in the {5} days before the boundary. The split is chronological (never random), so a sequence is never shuffled at random; even so, persistent activity crosses the boundary and explains part of the skill of every model, including the baseline.
+104	{0} days
+105	{0} days (main)
+106	{0} event with no close neighbours; the selected one is highlighted.
+107	{0} events · {1} MB in columnar format
+108	{0} events / {1} days
+109	{0} events match the filters.
+110	{0} events of magnitude {1} or greater since {2}.
+111	{0} events of magnitude Mw {1} or greater in the SGC Integrated Seismic Catalogue. Before the 20th century only the large earthquakes documented in historical sources are known; the higher recent density reflects better recording, not necessarily more earthquakes.
+112	{0} events in {1} days
+113	{0} events imported. The atlas shows them labelled as an imported file.
+114	{0} real events of magnitude {1} or greater between {2} and {3}; maximum magnitude {4}.
+115	{0} out of range, set to missing
+116	{0} km
+117	{0} equivalent magnitude ({1} year)
+118	{0} by identifier · {1} near-identical
+119	{0} depths fixed at {1} km, flagged.
+120	{0} points
+121	{0} records downloaded; {1} duplicates discarded.
+122	{0} audited quality rules; {1} duplicates discarded; no value imputed.
+123	{0} variables
+124	{0} zone-periods in the main configuration.
+125	{0}–{1} km
+126	{0}–{1} km · intermediate
+127	{0}–{1} km · deep intermediate
+128	{0}–{1} km · shallow
+129	{0}–{1} km · deep shallow
+130	{0}, {1} events
+131	{0}, {1}:{2} (Colombia time)
+132	{0}, {1}:{2} (UTC)
+133	{0}. Architecture
+134	{0}. Calibration and uncertainty
+135	{0}. Data
+136	{0}. Data and cleaning
+137	{0}. Explainability
+138	{0}. Uncertainty
+139	{0}. Limitations
+140	{0}. Reference map
+141	{0}. Models
+142	{0}. Objective
+143	{0}. What is estimated
+144	{0}. Validation
+145	{0}. Variables
+146	{0}. Variables (main table)
+147	{0}. Zones and periods
+149	+{0} pts
+150	+{0} points
+151	± {0} km
+152	±{0} pts
+153	±{0} points
+154	−{0} km
+155	−{0} pts
+156	−{0} points
+157	A · gap ≤ {0}°, horizontal error ≤ {1} km and RMS ≤ {2} s
+158	Within {0} km and within the {1} days before or after. Proximity does not imply a physical relationship between the events.
+159	Apr
+160	Apr {0}
+161	Open the
+162	April
+163	Open the Nexo assistant
+164	Open the atlas
+165	Open the model comparison
+166	Open story mode
+167	Open the probabilistic forecast
+168	Open side sheet
+169	Open global search and the command palette
+170	Open modal window
+172	Action
+173	Actions
+174	Accent
+175	Accent (text) on surface
+176	Accepted
+177	About the project
+178	About the project · SismoNexo Colombia
+179	Zoom in
+180	Zoom the atlas in
+181	Zoom in and out
+182	Turn on voice narration
+183	activity
+184	Activity in neighbouring zones ({0} year)
+185	Activity in neighbouring zones ({0} days)
+186	Activity is what has already been recorded. Hazard is the probability that the ground will shake with a given strength in the long term. Exposure is what is located there. Vulnerability is how fragile it is. Risk is the expected loss when they are combined. This platform works only with activity.
+187	Observed activity
+188	Activity observed between
+189	Recent activity
+190	Activity recorded with the active filters
+191	Seismic activity
+192	Seismic activity recorded between {0} and {1}
+193	Current: {0}-{1}-{2} to {3}-{4}-{5}
+194	Cumulative
+195	Step forward
+196	Step forward once
+197	In addition,
+198	dimensionless
+199	warning
+200	Warning
+201	Academic-use notice
+202	Academic-use notice.
+203	Warning.
+204	Affected
+205	Aug
+206	August
+207	Clusters
+208	Clustering.
+209	Also adjusts the median depth. Actual value: {0}. Usual range: {1}–{2}.
+210	Also adjusts the {0}-day, {1}-year and {2}-year counts. Actual value: {3} (unusually high or low compared with the other zones). Usual range: {4}–{5}.
+211	at least one event of magnitude
+212	When the catalogue is truncated at the forecast origin, the variables do not change: they use only earlier events.
+213	Zoom out
+214	high
+215	High
+216	Tabular alternative to the map: select an event to see its details.
+217	Tabular alternative to the map. Select a zone to see its details and the model's explanation.
+218	Height = depth
+219	Column height = event depth (schematic representation, upwards). Width = magnitude.
+220	Seismic hazard
+221	Official seismic hazard
+222	Widen the date range or lower the minimum magnitude.
+223	Widen the date range, lower the minimum magnitude or remove the location filter.
+224	Wide
+225	Width of the uncertainty interval ({0}%)
+226	Analyse
+227	Methodological annex
+228	Rings; lets overlaps show through
+229	Animations
+231	Previous
+232	Before
+233	before calibration). Validation period:
+234	Before modelling, every record goes through {0} quality rules. Duplicates are removed, conventional depths are flagged and no value is imputed. Every rule is kept in an audit log.
+235	Before they are used, the
+236	Year
+238	Appearance
+239	Application
+240	I applied these filters:
+241	Machine learning
+242	Here time is always respected. The model is trained on the past, calibrated on the following years and tested on a later period it never saw. An automatic detector looks for information leakage.
+243	Here it is reported at {0}%: it is computed from the frequency observed in validation for zone-periods with similar probabilities. A wide interval indicates little information.
+244	This platform uses the instrumental catalogue of Colombia's National Seismological Network (SGC), since {0}. A catalogue is never complete: small earthquakes are detected better where and when there are more stations.
+245	Seismic catalogue file
+246	Imported file muestra.csv. Back to the official catalogue
+247	Imported file:
+248	Imported file: muestra.csv
+249	Area under the precision-recall curve. It summarises how well the model ranks cases when positives are scarce. Higher is better.
+251	Drag and drop a file here
+252	This is repeated across
+253	Keyboard shortcuts
+254	Available keyboard shortcuts
+255	Single-key shortcuts (T, F, N, G…)
+256	Note: accumulated magnitude, mean depth is outside the usual historical range; the model is extrapolating and its response is unreliable.
+257	Note: there are only {0} zone-periods with an event in the whole history. With so few cases, differences between models are unreliable.
+258	Atlas
+259	Smart atlas of seismic activity and probabilistic forecasting for Colombia
+260	Seismic atlas
+261	Seismic atlas · SismoNexo Colombia
+262	Unused administrative attributes (founding act, year of validity)
+263	Internal viewer attributes (layer identifiers and styles)
+264	No filter has been changed yet.
+265	Author
+266	Academic author:
+267	Author, sources, licences, privacy and terms
+268	Software licence notices
+269	help
+270	Blue: fewer in B. Ochre: more in B.
+271	B · good
+272	B · gap ≤ {0}°, horizontal error ≤ {1} km and RMS ≤ {2} s
+274	low
+275	Low
+276	Balance:
+277	Collapsed sidebar (icons only)
+278	Baseline
+281	Block
+282	Block {0}: test {1}–{2}
+283	blocks that advance year by year, with a gap of
+284	blocks. In each block the model is trained on the whole past, validated on the following two years (calibration, decision threshold and hybrid weights) and tested on the year after. A gap equal to the horizon is left between sets.
+285	Boosting
+286	Random forest of {0} trees with balanced subsampling. Only in the main configuration ({1} days, M ≥ {2}). Isotonic calibration.
+287	Buttons
+288	Brier
+289	Brier score
+290	Brier score of each model in the test year of each block. Lower values are better; simultaneous rises in all models indicate years with unusual activity.
+291	Brier score of each model in the zones of each department with at least {0} evaluated zone-periods. Darker is better. {1} departments.
+294	Search
+295	Search departments, municipalities, coordinates, views and actions
+296	Search place, view or action
+297	Search for a term
+298	Search zone by name
+299	Global search and commands
+300	C · gap ≤ {0}° and horizontal error ≤ {1} km
+301	Each block trains on the past, calibrates on the following two years and is tested on the year after. A gap equal to the horizon is left between blocks.
+302	Each row of the modelling table describes a zone at an origin date with variables computed only from the past, and a label indicating whether there was at least one earthquake above the threshold in the following period.
+303	Each row of the modelling table is a zone at an
+304	Each model uses the information differently. That is why all of them are shown, compared with the same validation, and the one chosen is reported along with the reason.
+305	Every detected earthquake becomes a row: when it happened, where, at what depth, with what magnitude and with how much uncertainty it was located.
+306	Every transformation applied to the catalogue, in order, with the number of records affected and discarded.
+307	Each value on the map is communicated in five ways at once: colour, pattern, label, percentage and uncertainty interval. That way it does not depend on colour alone.
+308	Each zone shows the probability of recording at least one event above the threshold in the next thirty days. A high probability is not certainty, and a low one is not absence of activity. The map is about activity, not damage.
+310	Drop in the gradient boosting PR-AUC when each variable is shuffled in the last test block. The largest drop corresponds to recent events ({0} days).
+311	Completeness calendar
+312	Calibration
+313	Calibration (ECE)
+314	Calibration fitted on validation only.
+315	partial calibration
+316	Partial calibration
+317	Perfect calibration
+318	Calibration:
+319	calibrated
+320	Calibrated
+321	Quality A or B
+322	Data quality
+323	Data quality (A or B)
+324	Location quality
+325	Location quality (share of A or B, {0} year)
+326	Data quality
+327	Derived quality
+328	Switch to dark mode
+329	Switch between light and dark mode
+330	Change
+331	Change in probability, in percentage points, when each variable is raised or lowered by {0}% of its usual range, with the others fixed at the current scenario.
+332	Change of processing system: SEISAN → SeisComP
+333	System change in {0}, documented.
+334	Change from the previous period
+335	Filter changes in the history
+336	Fields
+338	Zone analysis layer
+339	Ranking ability (PR-AUC)
+340	Ability to rank zones in each test year. The spread between blocks is the measure of stability.
+341	Layers
+342	Chapter
+343	Chapter {0}: How could the project evolve?
+344	Chapter {0}: How is a zone-period built?
+345	Chapter {0}: How should the map be read?
+346	Chapter {0}: How is the information prepared?
+347	Chapter {0}: What are the limitations?
+348	Chapter {0}: Why must validation respect time?
+349	Chapter {0}: Why does Colombia shake?
+350	Chapter {0}: What is a probability?
+351	Chapter {0}: What information does a seismic catalogue contain?
+352	Chapter {0}: Which models were compared?
+353	Previous or next chapter
+354	Chapters
+355	Loading (skeleton that mimics the content)
+356	Loading, error, no data and interrupted connection.
+357	Loading content
+359	Cases
+360	Positive cases per test block ({0} km grid, {1} days, M ≥ {2}).
+361	SGC seismicity catalogue
+362	RSNC seismicity catalogue (SEISAN), {0}-{1}-{2} to {3}-{4}-{5}
+363	RSNC seismicity catalogue (SeisComP{0}), {1}-{2}-{3} to date
+364	Heterogeneous catalogue.
+365	RSNC instrumental catalogue (SGC): {0} events between {1} and {2}, M ≥ {3}. Cleaning with {4} audited rules; no imputation. Boundaries: DANE, MGN {5}.
+366	RSNC instrumental catalogue · version rsnc-{0}-{1}f{2}
+367	clean catalogue
+368	Seismic catalogue
+369	Integrated Seismic Catalogue (CSI) for Colombia
+371	H{0} cell
+372	H{0} cell · {1} zones
+373	Square cells
+374	Centre
+375	Learning centre
+376	Learning centre · SismoNexo Colombia
+377	Catalogue quality centre
+378	Catalogue quality centre · SismoNexo Colombia
+379	Spatial proximity
+380	Temporal proximity
+381	Close
+382	Close details
+383	Close zone details
+384	Close panels, sheets and windows
+388	Key figures
+389	Tabular figures: {0} · {1} · {2}% · {3}-{4}-{5}
+390	Five ways of dividing the territory. For the {0} km grid and {1}-day periods, the modelling table has
+391	Five words that do not mean the same thing
+392	Five units: department, municipality, hexagon and two grids.
+393	Large single-colour circles: groups of events; their size shows how many they gather. Zoom in to separate them.
+394	Cividis
+395	Light
+396	Class
+397	Coverage
+398	Coverage by department
+399	Time coverage
+400	Catalogue coverage and quality
+401	Coverage and quality: A or B locations
+402	Coverage and breaks
+403	Coverage, missing data, audit and import
+404	Code derived in this project from gap, horizontal error and RMS. It is not an official SGC code.
+405	Code derived in this project. {0}% of the events have quality A or B.
+406	QR code with the address of this platform's seismic atlas
+407	Matches the pipeline's automatic criterion (lowest log-loss before the final test).
+408	COLOMBIA
+409	Colombia sits where three tectonic plates meet: Nazca, Caribbean and South America. That interaction produces shallow earthquakes in the crust and deep earthquakes beneath the mountain range. The map shows the real events of magnitude five or greater recorded since nineteen ninety-three.
+410	Colombia lies where the Nazca, Caribbean and South American plates meet. That is why it shakes often, at very different depths: from the crust to more than {0} km beneath Santander.
+411	Colombia is moving · {0}
+412	Colombia is moving. Data help us understand how.
+414	Event colour
+415	Colour: depth
+416	{0}D columns
+417	highest-magnitude columns out of
+418	Recognised columns:
+419	Combination
+420	Logistic combination of the probabilities from the baseline, the ETAS-like rate and gradient boosting, fitted on the validation block.
+421	How the result should be interpreted
+422	How to read the probability scale
+423	How to obtain official data
+424	How to tell whether a model is useful
+425	How they are grouped by zone and period
+426	How a probability is calculated
+427	How events become data
+428	How the estimates are produced, with what data, how they are validated and what they cannot say. Everything described here is implemented in the project pipeline.
+429	How the estimates are produced and validated
+430	How a model is validated without looking at the future
+431	Comfortable
+432	Compact
+433	Compare the average depth of Antioquia and Nariño
+434	Comparison of indicators between period A and period B
+435	Model comparison
+436	Zone comparison
+437	Side-by-side comparison
+438	Comparison by region
+439	Model comparison
+440	Model comparison · SismoNexo Colombia
+441	We compared {0} model families, from historical frequency to gradient boosting and a hybrid. For the fifty-kilometre grid, thirty days and magnitude four, the best result came from the statistical + ML hybrid.
+442	Compare periods
+443	Compare periods · SismoNexo Colombia
+444	Compare zone
+445	Full (since {0})
+446	Understand
+447	Check
+448	checks in every experiment: variables built with future data (they are recomputed with the truncated catalogue), scalers fitted on the whole set, duplicates between sets, overlapping windows, close aftershocks split between training and test, and the target variable among the inputs.
+449	with
+450	with {0} events or more
+451	With the decision threshold {0}% (the one that maximises F{1} on validation): {2} hits with an event, {3} events not flagged, {4} flags without an event and {5} hits without an event.
+452	There is no trained model for these parameters. The historical-frequency baseline recalculated with your filters is shown; it has no walk-forward validation of its own.
+453	with an event
+454	with an event (
+455	With an event (positives)
+456	With rare events it is more informative than accuracy and than ROC-AUC. Its reference value is the prevalence: a model with no information obtains a PR-AUC equal to the share of positives.
+457	With the statistical + ML hybrid, the estimate goes from {0}% to {1}% (−{2} points).
+458	With interval, model and version
+459	With the active layers
+460	With reduced motion, map movements, ripples and transitions are replaced by instant changes or brief fades. Information never depends on an animation.
+461	with fixed parameters; no source or attenuation model.
+462	With text summary, alternative table and export.
+463	With tooltip
+464	With a rate of
+465	Magnitude-weighted concentration
+466	Concepts, glossary and story mode
+469	Connection interrupted
+470	Confidence
+471	Settings
+472	Settings · SismoNexo Colombia
+473	trained configurations
+474	trained configurations, and the interface says so.
+475	Dataset
+476	Evaluation set
+477	Learn about the methodology
+478	Keep the source, the data version and the model version in every export.
+479	Constellation
+480	Seismic constellation
+481	Seismic constellation · SismoNexo Colombia
+482	Network construction (chronological order)
+483	Playback counters
+484	Methodology contents
+485	Annual count of events of magnitude {0} or greater between {1} and {2}. The maximum was {3} events in one year.
+486	Annual count of events in the period. Source: SGC–RSNC.
+487	Count per cell
+488	Count per cell of ≈ {0} km
+489	Outline
+490	Collapse sidebar
+491	Contrast
+492	Contrast measured in the current theme (WCAG {0} AA requires {1}:{2} for normal text)
+493	SHAP contribution in the gradient boosting model. To the right, the variable raised the estimate; to the left, it lowered it. This does not demonstrate causality.
+494	Presentation controls
+495	Playback controls
+496	Conversation with Nexo
+497	Numeric field conversion
+498	Coordinates
+499	Coordinates outside the study window

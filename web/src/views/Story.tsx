@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { BarList } from '@/charts/Chart'
 import { Logo } from '@/components/Logo'
 import { toggleFullscreen } from '@/components/Palette'
+import { LanguageSelect } from '@/components/Shell'
 import { Gate, IconButton, Kpis, Note, ProbabilityScale, ProbabilityValue, useKey, useMotionOk } from '@/components/ui'
 import { forecastId, loadEvents, loadForecast, loadGeo, loadIndex, loadQuality, loadZones, MODEL_ORDER, useAsync, type Events, type ForecastFile, type GeoFC, type IndexData, type QualityData, type ZoneTable } from '@/lib/data'
 import { buildPdf, DISCLAIMER, download, provenance } from '@/lib/export'
@@ -227,6 +228,7 @@ function Deck({ d }: { d: Data }) {
           <span className="caption hide-narrow">· Modo historia</span>
         </div>
         <div className="row" role="toolbar" aria-label="Controles de la presentación">
+          <LanguageSelect />
           <IconButton label={subs ? 'Ocultar subtítulos' : 'Mostrar subtítulos'} aria-pressed={subs} onClick={() => setSubs(!subs)}><Captions size={20} aria-hidden /></IconButton>
           <IconButton label={voice ? 'Detener la narración' : 'Activar la narración por voz'} aria-pressed={voice} onClick={() => ('speechSynthesis' in window ? setVoice(!voice) : toast('Este navegador no ofrece síntesis de voz.'))}>{voice ? <Volume2 size={20} aria-hidden /> : <VolumeX size={20} aria-hidden />}</IconButton>
           <IconButton label="Exportar resumen en PDF" onClick={() => void pdf()}><FileDown size={20} aria-hidden /></IconButton>

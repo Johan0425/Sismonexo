@@ -1,0 +1,496 @@
+500	Invalid coordinates
+501	Invalid coordinates: {0}. Missing magnitudes: {1}. Out-of-range depths set to missing: {2}. Depth fixed at {3} km by the source: {4}.
+502	Valid coordinates within the study window
+503	Copy link to this view
+504	Copy shareable link
+505	Computing cost
+506	Create a report for this zone
+507	Create report
+508	Critical
+509	Critical on surface
+511	CSV, JSON or GeoJSON. The file is processed in your browser and is not sent to any server.
+512	≈ {0} km grid
+513	≈ {0} km grid
+514	≈ {0} km grid · {1} days · M ≥ {2}
+515	≈ {0} km grid · {1} zones
+516	Any magnitude recorded in the zone. Actual value: {0}. Usual range: {1}–{2}.
+517	Body · {0}. The probability of recording at least one event of magnitude {1} or greater in the next {2} days.
+519	Meets AA
+520	Calibration curve: Hybrid
+521	Calibration curve: Baseline
+522	Calibration curve: Poisson / NB
+523	Frequency curve by year
+524	Frequency curve by month
+525	Frequency curve by week
+526	Precision-recall curve
+527	ROC curve
+528	Curves computed over all walk-forward blocks.
+529	D · the rest with reported metrics
+533	Data for “Events per year”
+534	Session data
+535	Event data
+536	Missing data
+537	Geographic data (GeoJSON)
+538	Missing data
+539	Real data ·
+540	Data, variables, models, validation and limitations
+541	Data: catalogue of Colombia's National Seismological Network, version
+544	of
+545	of {0}
+546	of {0} downloaded
+547	of each zone is the frequency observed ({0}% Jeffreys interval) in validation for zone-periods with probabilities in the same band. With the baseline recalculated in the browser, an approximate credible interval of the rate is used (Gamma posterior).
+548	for the baseline.
+549	Of the zone-periods whose largest event fell in each range, the share flagged by the model (recall).
+550	Of the
+551	of recording at least one event of magnitude
+552	of a zone is high with more than {0} records and at least half with A or B locations; medium with {1} to {2} records; low with fewer than {3}.
+553	Set dates, magnitude and area; run the query and download the report.
+554	From the public catalogue of Colombia's National Seismological Network (SGC). The “Data quality” section documents the download, every cleaning rule and the licence.
+555	in the repository. The technical documentation, the manuals and the presentation script are in the folder
+556	of the total); they keep the source's geographic description.
+557	Event density
+558	Interface density
+559	Smoothed density
+560	Department
+561	Department · {0} zones
+562	National Administrative Department of Statistics (DANE)
+563	Department and municipality by spatial join (DANE, MGN {0})
+564	Department, municipality, “{0}, -{1}”, view or action
+565	Departments
+566	Departments with the most recorded events (M ≥ {0}) in the last
+567	It depends on how things were built and on social conditions. This platform does not assess it.
+568	They depend on the decision threshold. F{0} is their harmonic mean.
+569	Partial dependence: Events in the last year
+570	Partial dependence: Recent events ({0} days)
+571	derive
+572	Turn them off if you use voice dictation or if they get in your way.
+573	downloaded −
+574	Download data (CSV)
+575	Download image (PNG)
+576	Download JSON
+577	Download PDF
+578	Discarded
+579	discarded =
+580	discard
+581	Discard
+582	It describes the model's behaviour, not the physics of earthquakes. A high contribution does not demonstrate causality.
+583	It describes the past observed in the catalogue. It is the raw material of this platform. It says nothing about damage or about what will happen.
+584	Location description
+585	From
+586	From (UTC)
+587	Since {0}
+588	Since {0} (SeisComP)
+589	Since {0} the SGC has published the catalogue processed with SeisComP. Magnitude types (ML → MLr and regional variants), network density and review criteria change. Series that cross that date are not strictly homogeneous.
+590	From the centre of the zone to the most recent M ≥ {0} event in the catalogue. Actual value: {1}. Usual range: {2}–{3}.
+591	Disabled
+592	Undo the last filter change
+593	Undo these filters
+594	Pan the map (with the map focused)
+595	after
+596	After
+597	Detail
+598	Details of the selected zone
+599	Details of the selected event
+600	Detection of possible structural breaks
+601	leakage detector
+602	Information leakage detector
+603	Leakage detector: {0} of {1} checks with no findings.
+604	day
+605	Day
+606	days
+607	days · M ≥
+608	days of the catalogue, up to
+609	Days in the custom horizon
+610	days between sets. Result on the {0} km grid: PR-AUC of
+611	days and M ≥
+612	days, with a {0}% uncertainty interval between
+613	days, p =
+614	days.
+615	days)
+616	days), according to
+617	Dec
+618	December
+619	Difference in events per month (B − A) in cells of about {0} km.
+620	Subtle
+621	Validation design
+623	Distance to the previous event
+624	Distance to the most recent M ≥ {0} event
+625	Distance to the most recent M ≥ {0} event ↑
+626	Distance to the most recent M ≥ {0} event ↓
+627	Vertical distance between the surface and the point where the rupture began (hypocentre).
+628	Distribution of the zones across the six probability classes.
+629	Magnitude distribution
+630	Depth distribution
+631	Distribution by magnitude type
+632	Diverging (differences only)
+633	DIVIPOLA level {0}
+634	Political-Administrative Division — National Geostatistical Framework {0}
+635	Where recorded activity changed
+636	Two periods of the catalogue side by side: how much recorded activity changed and where.
+637	Two zones with the same hazard can have very different exposures. This platform does not include exposure data.
+640	duplicates
+641	Approximate duplicates
+642	Duplicates discarded
+643	Duplicates between sets
+644	Duplicates by identifier
+646	Tabs example
+647	Illustrative example
+648	Examples
+649	The
+650	The data file “fc/g{0}-{1}-{2}.json” is not available (HTTP {3}).
+651	The file is not valid JSON.
+653	The catalogue changed its processing system and magnitude types in {0} and its coverage is not uniform.
+654	The catalogue changed system in {0} and its coverage is not uniform across the territory.
+655	The catalogue in figures
+656	The included catalogue starts at {0}.
+657	The complete clean catalogue, with the {0} variables of the data model, is in
+658	The catalogue mixes {0} magnitude types. The most frequent is ML ({1}%), from the SEISAN period; since {2} the MLr variants predominate.
+659	The catalogue records times in UTC. Date filters and forecast periods always use full UTC days; this option only changes how each event's time is displayed.
+660	The Integrated Seismic Catalogue ({0}–{1}) is used only as historical context on the home page.
+661	The catalogue uses several types: ML (local), MLr (regionalised local, since {0}), Mw (moment) and others. They are not strictly equivalent, so series that mix types should be read with caution.
+662	Content is written in Spanish and translated in the interface. Place names, identifiers and exported files (PDF, CSV, JSON) stay in Spanish. If a translation is missing, the text appears in Spanish.
+663	The pipeline's automatic criterion (lowest log-loss before the final test) picks the statistical + ML hybrid; the difference arises because interpretability, cost and stability also count here.
+664	The pipeline's automatic criterion (lowest log-loss before the final test) picks the historical-frequency baseline; the difference arises because interpretability, cost and stability also count here.
+665	Class imbalance is handled with class weighting in the classification models and with suitable metrics (PR-AUC, Brier, log-loss); never with oversampling before splitting.
+666	The epicentre is located within the official polygons. Events at sea or in neighbouring countries have no department; they are kept because they contribute to border cells.
+667	The scenario is identical to the zone's actual values. Move a control to see how the model responds.
+668	The largest-magnitude event within a department in the last three years of the catalogue.
+669	The detailed history is in the file
+670	The project's main horizon is {0} days.
+672	The model gave more weight to:
+673	the model does not estimate counts
+674	The default model is the one with the lowest log-loss in the validation before the final test.
+675	Offline mode stores in the browser cache the application files and the data you have already opened, so you can present without a network. Layers that depend on external services (relief, reference map and official hazard) will not be available.
+676	The period is too long to step by
+677	The prototype works as a static application: the Python pipeline downloads, cleans, trains, validates and exports JSON artefacts that the browser reads. The simple statistical models are recalculated in the browser when you change depth, historical period, smoothing or a custom horizon; the machine-learning ones exist only in the
+678	The starting point is simple: if a zone has had, on average, a certain rate of events per period, the probability of seeing at least one follows from that rate. That is the
+679	The range in which the real frequency reasonably lies for zones with a similar estimate. If it is wide, there is little information and the central value should be read with more caution.
+680	The repository also includes a FastAPI API over the same artefacts and a PostgreSQL/PostGIS schema with Docker Compose as the target architecture. Nothing you do in the interface is sent to a server.
+681	The most important result is methodological: with strict chronological validation, the machine-learning models improve little on historical frequency, and for large events they do not improve on it. The platform shows this as it is.
+682	The software is provided “as is”, with no guarantee of accuracy or availability.
+683	The territory is divided in five ways. The grids are defined by geometry (cells that touch the national territory), not by observed seismicity, so as not to introduce information from the future.
+684	The value shown is the historical-frequency baseline itself.
+685	Glass is used only over the map, in the top bar and in sheets and windows.
+686	Choose file
+687	in
+688	In {0} the processing system and magnitude types changed; the network became denser over the years. Part of the trends reflects detection, not seismicity.
+689	Increasing
+690	in each zone between
+691	Colombia has shallow seismicity ({0}–{1} km), intermediate (for example, the Bucaramanga nest, near {2} km) and deep. Depth is the least well-resolved parameter; the catalogue flags the cases where it was fixed at {3} km.
+692	In the history analysed, values like those in the scenario were associated with fewer zone-periods with an event.
+693	{0} events matching the filters were recorded in the period ({1} per month on average). The maximum magnitude was {2} and the median depth {3} km. {4}% of the events have a quality A or B location.
+694	In the main configuration of this document ({0} km grid, {1} days, M ≥ {2}) there are
+695	in the recalculated baseline.
+696	In walk-forward validation, the PR-AUC of
+697	In bold, the best value in each column. PR-AUC and Brier are the main metrics; accuracy is not used to decide.
+698	across all zones
+699	Jan
+700	Jan {0}
+701	January
+702	Links
+703	Links to S-files, waveforms and individual map (not attributes of the event)
+704	enrich
+705	Got it
+706	Surroundings
+707	In
+708	between {0} and {1} historical records, or locations of limited quality
+709	Between {0} and {1}. Only available with the recalculated baseline.
+710	There are at least {0} days between blocks: no training or validation label overlaps the next block.
+711	between
+712	Training
+713	Training · block
+714	Training (past)
+715	Training from {0} to {1}, validation from {2} to {3} and test from {4} to {5}.
+716	Train (s)
+717	Send
+718	Send query
+719	Epicentre
+720	Epidemic-Type Aftershock Sequence. A simplified version is used here (“ETAS-like rate”) with fixed parameters; it is not a full ETAS fit.
+721	Mean squared error between the forecast probability and what happened ({0} or {1}). Lower is better.
+722	Location err…
+723	Location error
+724	Monthly median location error
+725	Median location error by year
+726	Magnitude err…
+727	Depth err…
+728	Horizontal error = √(error_lat² + error_lon²). The A–D/N code is this project's own classification based on gap, horizontal error and RMS; it is not an official SGC code.
+729	Horizontal error and location quality code
+730	An error that occurs when a model unintentionally uses data that would not be available at forecast time.
+731	is
+732	It is the criterion used to choose the default model, using only the blocks before the final test.
+733	It is the location drawn on the map. It has a location error that the catalogue reports in kilometres.
+734	It is an approximate credible interval of the historical rate.
+735	It is an academic prototype by
+736	It is a national approximation; actual completeness varies by region.
+737	It is the model's response to an assumed combination of variables. This does not demonstrate causality or describe what will happen.
+739	Probability scale in six classes, from very low (less than {0}%) to very high (more than {1}%).
+740	Probability scale in six classes, from very low (less than {0}%) to very high (more than {1}%). Current value: {2}%, class Low.
+741	Probability scale in six classes, from very low (less than {0}%) to very high (more than {1}%). Current value: {2}%, class Medium.
+742	Probability scale in six classes, from very low (less than {0}%) to very high (more than {1}%). Current value: {2}%, class Very high.
+743	Probability scale in six classes, from very low (less than {0}%) to very high (more than {1}%). Current value: > {2}%, class Very high.
+744	Diverging scale: blue = went down, ochre = went up.
+745	Logarithmic scale. Grey: no events above the threshold.
+746	Logarithmic scale. No colour: no events.
+747	Probability scale
+748	Scale relative to the current view.
+749	Scalers fitted on all the information
+750	scenario
+751	Scenario {0}
+752	Hypothetical scenario
+753	Hypothetical scenario. It is not an official forecast and does not change the real data.
+754	Saved scenarios
+755	Hypothetical scenarios and model sensitivity
+756	Type a query
+757	Specialisation in Data Analytics Applied to Business
+758	Diagram of {0} walk-forward blocks. Block {1} trains from {2} to {3}, validates from {4} to {5} and is tested from {6} to {7}.
+759	This page does not exist
+760	This platform describes activity and estimates its probability. It does not compute official hazard, exposure, vulnerability or risk.
+761	This platform presents academic estimates based on historical patterns. It is not an official alert, it does not predict individual earthquakes and it does not replace information from the Colombian Geological Survey or from risk management authorities.
+762	This zone
+763	Model stability
+764	Stability between blocks
+765	Stable
+766	Seasonality
+767	Seasonality (cosine of the day of the year)
+768	Seasonality (forecast month)
+769	Seasonality (sine of the day of the year)
+770	Statistical
+771	Statistical (counts)
+772	Statistical (seismological)
+773	Statistical / linear ML
+774	Status
+775	calibration status
+776	Calibration status
+777	Review status
+778	States
+779	These contributions describe how the gradient boosting model responds; they are statistical associations. This does not demonstrate causality or indicate that a variable causes earthquakes.
+780	Time trail
+781	Estimate
+782	Experimental estimate by SismoNexo; it is not an official product.
+783	Experimental, academic estimate. Official seismic hazard is published by the Colombian Geological Survey.
+784	Estimated by maximum curvature (mode of the magnitude histogram + {0}). Below this value the catalogue does not record every event. It is bounded by the download threshold ({1}).
+785	Estimate, observed activity and context of a zone
+786	Academic estimates based on historical patterns. This is not an official alert and does not predict individual earthquakes; consult the SGC and risk management authorities.
+787	Academic estimates. This is not an official alert and does not replace the SGC. Keys: ← → to move, Esc to exit.
+788	To estimate, for each zone and horizon ({0}, {1} and {2} days; main {3}), the probability of recording at least one event with magnitude equal to or greater than a threshold ({4}; {5}; {6}). The date, exact location and magnitude of individual events are not estimated.
+790	ETAS fitted by maximum likelihood and CSEP-style tests.
+791	Simplified ETAS
+793	Prospective month-by-month evaluation and automatic updating.
+794	Evaluating a forecast with randomly shuffled data would be cheating: the model would see aftershocks of the same sequence in both training and test.
+795	Selected event
+796	events
+797	Events
+798	Events (nodes)
+799	Nearby events
+800	Nearby events gathered
+801	events with depth fixed at {0} km by the source, which are flagged but not removed.
+802	Events in the constellation (nodes), with their sequence
+803	events of magnitude
+804	Largest-magnitude events
+805	Largest-magnitude events in the zone
+806	highest-magnitude events; left out:
+807	events in the filter have no reported depth.
+808	Events in the period. Boundaries: DANE, MGN {0}.
+809	Events in the last year
+810	events in
+811	Events in {0}
+812	Events in {0} days
+813	Events in its sequence
+814	Linked events
+815	Expected events
+816	Filtered events within the current frame
+817	events outside the department boundaries (sea or neighbouring countries). More recorded events does not mean greater danger: it depends on depth, magnitude and network coverage.
+818	Events M ≥
+819	Events M ≥ {0}
+820	events per {0} days
+821	Events per year
+822	Events per year (
+823	Events per year (M ≥ {0}).
+824	Events per year for the most frequent magnitude families. The change from ML to MLr in {0} means the magnitude series are not strictly homogeneous.
+825	Events per year in the zone, from {0} to {1}. Annual maximum: {2}.
+826	Events per year between {0} and {1}. The vertical line marks the playback moment ({2}). Click the chart to jump to that moment.
+827	Events per year by SGC processing system. The handover from SEISAN to SeisComP happens in {0}.
+828	Events per cell
+829	Events per month
+830	Events per month (M ≥ {0})
+831	Events per month between {0} and {1}. The vertical line marks the playback moment ({2}). Click the chart to jump to that moment.
+832	Events per month: B − A
+833	events per period, the probability of recording at least one is
+834	Events per week
+835	Events per week between {0} and {1}. The vertical line marks the playback moment ({2}). Click the chart to jump to that moment.
+836	events per neighbouring zone
+837	Rare events.
+838	Real events of magnitude {0} or greater, {1}–{2}. Size by magnitude. Source: SGC–RSNC.
+839	real events await.
+840	Recent events ({0} days)
+841	recent events ({0} days) ({1} events); events in the last year ({2} events); weighted recent-activity term (ETAS-like) ({3} index)
+842	recent events ({0} days) (raises the estimate); events in the last year (raises the estimate); events above the threshold ({1} year) (raises the estimate)
+843	Recent events ({0} days) ↑
+844	Recent events ({0} days) ↓
+845	Recent events above the threshold
+846	Recorded events
+847	Events recorded within each department (catalogue density). The largest number corresponds to Santander. In “Seismic atlas” it can be viewed as a density map.
+848	Events recorded per year
+849	Events recorded per year within the zone (M ≥ {0}). Source: SGC–RSNC.
+850	Events recorded by month and year (M ≥ {0}). Months without records appear in grey. It helps to spot gaps and regime changes in detection.
+851	Reviewed events
+852	Events reviewed by an analyst: {0}%. Outside department boundaries: {1}.
+853	Events above the threshold ({0} year)
+854	Events above the threshold ({0} years)
+855	Events above the threshold ({0} days)
+856	Events above the threshold ({0} days) ↑
+857	Events above the threshold ({0} days) ↓
+858	events above the threshold in the period) combined with the average of all zones. There are no additional variables to explain.
+859	visible events
+860	events.
+861	It prevents the model from “seeing” the future. A gap equal to the horizon is left between training, validation and test, so that no label window overlaps the next block.
+862	Evolution of the full catalogue year by year
+863	Experiments
+864	Scenario explanation
+865	Explain why this cell has a probability above its average
+866	Explain this estimate
+867	Historical explorer
+868	Historical explorer · SismoNexo Colombia
+869	Explore
+870	Explore the atlas
+871	Explore in the atlas
+872	Export
+873	Export snapshot
+874	Export the clean catalogue
+875	Export summary as PDF
+876	Exposure
+877	National extent
+878	Failure
+879	Geological faults
+880	Geological faults:
+881	is missing for events located at sea or in neighbouring countries (
+882	is missing in very few cases; in addition there are
+883	are almost always missing: the source computes Mw only for larger events and does not publish the magnitude error in the query used.
+884	Required columns are missing: date and time, latitude, longitude, magnitude. Columns found: a, b.
+885	Magnitude type family
+886	Phase {0}
+888	Feb
+889	February
+890	Date
+891	Date (UTC)
+892	Update date
+893	Query date
+894	Generation date
+895	origin date
+896	Unreadable or future date
+897	Date and time
+898	Date and time (UTC)
+899	date and time ← “fecha_hora_utc” · latitude ← “latitud” · longitude ← “longitud” · depth ← “profundidad” · magnitude ← “magnitud”
+900	Date and time in UTC (ISO {0})
+901	Date and time in UTC, latitude, longitude and depth.
+902	Dates (UTC): {0}-{1}-{2} to {3}-{4}-{5} · Magnitude: {6} to {7} · Depth: all · Location: the whole study window
+903	Forecast sheet
+904	row {0}
+905	Rows
+906	Rows read
+907	rows go through
+908	zone-period rows; only
+909	rows.
+910	rows). Missing values are not imputed.
+911	Filter and zoom the atlas
+912	Filters
+913	Filters applied
+914	Filters and region
+915	General background
+916	Inverse background
+917	A way of evaluating that respects time: train on the past and test on the following period, advancing block by block.
+918	Detected format: CSV
+919	Historical frequency
+920	Average monthly frequency
+921	Observed frequency
+922	Observed frequency (band: {0}% interval)
+923	Recent frequency
+924	Recent frequency (
+925	Compared with the baseline, its PR-AUC is {0} (+{1}) and its Brier improves by +{2}%. Calibration status: calibrated.
+926	Compared with the baseline, its PR-AUC is {0} (−{1}) and its Brier improves by −{2}%. Calibration status: partial calibration.
+928	was
+929	Source
+930	System font. Body {0} px, minimum {1} px, tabular figures.
+931	Official source (SGC)
+932	Official source of seismic information:
+933	Source: catalogue of Colombia's National Seismological Network (SGC), version
+934	Source: Integrated Seismic Catalogue (SGC). Historical context; it does not feed the models.
+935	Source: SGC
+936	Data sources
+937	Outside the study window (Colombia and surroundings)
+938	Outside the departments
+939	Outside the usual historical range ({0}–{1}): the model is extrapolating.
+940	outside the usual historical range. The result is an extrapolation.
+941	Information leakage
+942	Experimental feature: events as a network of proximity in space and time.
+943	Secondary functions
+944	Info. gain (bits)
+945	Azimuthal gap
+946	Generated
+948	Glossary
+949	Interactive glossary
+952	Histogram gradient boosting
+953	histogram gradient boosting ({0}) and Random Forest ({1})
+954	scikit-learn histogram gradient boosting (same family as LightGBM and XGBoost), {0} trees of up to {1} leaves. Isotonic calibration.
+955	Histogram gradient boosting: Machine learning.
+956	Chart
+957	Chart: observed activity
+958	Chart: coverage by year
+959	Chart: events per year
+960	Chart: zones by class
+961	Charts
+962	Grey: fewer than {0} recorded events (insufficient coverage).
+963	Group
+964	groups. None uses information after the forecast origin.
+967	saved). The snapshot includes the “Hypothetical scenario” label, the source and the model version.
+968	Save
+969	Save this moment
+970	Save and export
+971	Save important moments to return to them during the session.
+972	Save it as CSV with at least these columns: date and time (UTC), latitude, longitude and magnitude. Depth, magnitude type and identifier are optional.
+974	H{0} resolution {1}
+975	Click a node (or use Tab and Enter) to see the earlier and later events in its group.
+976	To
+977	To (UTC)
+978	up to {0}
+979	There are
+980	Hexagon of a hierarchical global grid. Resolution {0} is used here (about {1} km² per cell).
+981	H{0} hexagons
+982	Hybrid
+983	statistical + ML hybrid
+984	statistical + ML hybrid
+985	Statistical + ML hybrid
+986	Statistical + ML hybrid: Hybrid.
+987	Hypothetical
+988	Seismic history of Colombia
+989	Filter history
+990	Session history (
+991	Brier score history by time block
+992	History
+993	Colombia time (UTC−{0})
+994	UTC time
+995	Horizon
+996	custom horizon, shortened historical period, spatial smoothing
+997	There was an event
+998	Identity
+999	Identifier
+1000	Language, dates and times
+1001	equal to the horizon: no label overlaps
+1002	Interactive illustration
+1003	Map image (PNG)
+1004	Permutation importance
+1005	Import data
+1006	Import a catalogue
+1007	Imputation and standardisation were fitted on the training block only.
+1008	Uncertainty
+1009	Includes filters, layers and frame
+1010	Indicator
+1011	Indicators
+1012	Quality indicators
+1013	Network indicators
+1014	Playback indicators
+1015	Indicators for the filtered events
+1016	Catalogue indicators
+1017	Forecast indicators
+1018	Side-by-side indicators
+1019	Indicators, cleaning rules and coverage
